@@ -5,3 +5,8 @@ LED to indicate if in OVERVOLTAGE state.
 Terminal lugs for probes?
 3 SPST relays to enable path to each scale's voltage divider top resistor. Solid state relays?
 Common bottom voltage divider resistor.
+Scales:
+	6V (5V nominal)		0 Ohm 		+ 10 kOhm
+	15V (12V nominal) 	20 kOhm 	+ 10 kOhm
+	30V (24V nominal)	49.9 kOhm 	+ 10 kOhm
+All resistors can be 1/16 W. Which package? 0402? Maybe package that matches LEDs?
