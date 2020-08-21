@@ -1,0 +1,7 @@
+Shunt 5V(ish) zener diode to protect Arduino analog in pin.
+One LED per scale range to indicate which is active (5V, 12V, 24V).
+LED to indicate if in OVERVOLTAGE state.
+4-digit 7-segment display. This has the added benefit of being able to cleanly display the 0-1023 ADC value for debug.
+Terminal lugs for probes?
+3 SPST relays to enable path to each scale's voltage divider top resistor. Solid state relays?
+Common bottom voltage divider resistor.

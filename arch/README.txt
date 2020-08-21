@@ -1,1 +1,0 @@
-This folder holds documentation for decision making, brainstorming, etc.

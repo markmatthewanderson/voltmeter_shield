@@ -1,0 +1,2 @@
+To protect ADC pin, start in 24V scale, then work down to the appropriate scale.
+Implement some sort of hysteresis in scale-switching logic to avoid back-and-forth.
