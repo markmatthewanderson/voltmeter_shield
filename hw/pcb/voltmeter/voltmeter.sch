@@ -1,4 +1,274 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A0
+U 1 1 5F417551
+P 5200 3300
+F 0 "A0" H 5200 4481 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 5200 4390 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 5200 3300 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 5200 3300 50  0001 C CNN
+	1    5200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R0
+U 1 1 5F41E6EC
+P 7550 3550
+F 0 "R0" H 7620 3596 50  0000 L CNN
+F 1 "10k" H 7620 3505 50  0000 L CNN
+F 2 "" V 7480 3550 50  0001 C CNN
+F 3 "~" H 7550 3550 50  0001 C CNN
+	1    7550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D0
+U 1 1 5F4217E9
+P 7950 3550
+F 0 "D0" V 7904 3630 50  0000 L CNN
+F 1 "5.1V Zener" V 7995 3630 50  0000 L CNN
+F 2 "" H 7950 3550 50  0001 C CNN
+F 3 "~" H 7950 3550 50  0001 C CNN
+	1    7950 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F422683
+P 7750 3900
+F 0 "#PWR?" H 7750 3650 50  0001 C CNN
+F 1 "GND" H 7755 3727 50  0000 C CNN
+F 2 "" H 7750 3900 50  0001 C CNN
+F 3 "" H 7750 3900 50  0001 C CNN
+	1    7750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3700 7750 3700
+Wire Wire Line
+	7750 3700 7750 3900
+Wire Wire Line
+	7950 3700 7750 3700
+Connection ~ 7750 3700
+Wire Wire Line
+	7750 3300 7750 3400
+Wire Wire Line
+	7750 3400 7550 3400
+Wire Wire Line
+	7950 3400 7750 3400
+Connection ~ 7750 3400
+$Comp
+L Connector:Screw_Terminal_01x02 J0
+U 1 1 5F423A9F
+P 7750 900
+F 0 "J0" V 7714 712 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 7623 712 50  0000 R CNN
+F 2 "" H 7750 900 50  0001 C CNN
+F 3 "~" H 7750 900 50  0001 C CNN
+	1    7750 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K0
+U 1 1 5F429491
+P 6450 1950
+F 0 "K0" H 6780 1996 50  0000 L CNN
+F 1 "SPST Relay" H 6780 1905 50  0000 L CNN
+F 2 "" H 6800 1900 50  0001 L CNN
+F 3 "" H 6450 1950 50  0001 C CNN
+	1    6450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K1
+U 1 1 5F42EDC7
+P 7550 1950
+F 0 "K1" H 7880 1996 50  0000 L CNN
+F 1 "SPST Relay" H 7880 1905 50  0000 L CNN
+F 2 "" H 7900 1900 50  0001 L CNN
+F 3 "" H 7550 1950 50  0001 C CNN
+	1    7550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Axx-11x K3
+U 1 1 5F430E83
+P 8600 1950
+F 0 "K3" H 8930 1996 50  0000 L CNN
+F 1 "SPST Relay" H 8930 1905 50  0000 L CNN
+F 2 "" H 8950 1900 50  0001 L CNN
+F 3 "" H 8600 1950 50  0001 C CNN
+	1    8600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F432E35
+P 7750 2500
+F 0 "R1" H 7820 2546 50  0000 L CNN
+F 1 "20k" H 7820 2455 50  0000 L CNN
+F 2 "" V 7680 2500 50  0001 C CNN
+F 3 "~" H 7750 2500 50  0001 C CNN
+	1    7750 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F4334AF
+P 8800 2500
+F 0 "R2" H 8870 2546 50  0000 L CNN
+F 1 "49.9k" H 8870 2455 50  0000 L CNN
+F 2 "" V 8730 2500 50  0001 C CNN
+F 3 "~" H 8800 2500 50  0001 C CNN
+	1    8800 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3300 7750 3300
+Wire Wire Line
+	7750 2650 7750 3000
+Connection ~ 7750 3300
+Wire Wire Line
+	7750 2350 7750 2250
+Wire Wire Line
+	8800 2250 8800 2350
+Wire Wire Line
+	8800 2650 8800 3000
+Wire Wire Line
+	8800 3000 7750 3000
+Connection ~ 7750 3000
+Wire Wire Line
+	7750 3000 7750 3300
+Wire Wire Line
+	6650 2250 6650 3000
+Wire Wire Line
+	6650 3000 7750 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5F43EAB2
+P 7850 1150
+F 0 "#PWR?" H 7850 900 50  0001 C CNN
+F 1 "GND" H 7855 977 50  0000 C CNN
+F 2 "" H 7850 1150 50  0001 C CNN
+F 3 "" H 7850 1150 50  0001 C CNN
+	1    7850 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1100 7850 1150
+Wire Wire Line
+	7750 1100 7750 1450
+Wire Wire Line
+	8800 1650 8800 1450
+Wire Wire Line
+	8800 1450 7750 1450
+Connection ~ 7750 1450
+Wire Wire Line
+	7750 1450 7750 1650
+Wire Wire Line
+	6650 1650 6650 1450
+Wire Wire Line
+	6650 1450 7750 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5F440E68
+P 6250 2350
+F 0 "#PWR?" H 6250 2100 50  0001 C CNN
+F 1 "GND" H 6255 2177 50  0000 C CNN
+F 2 "" H 6250 2350 50  0001 C CNN
+F 3 "" H 6250 2350 50  0001 C CNN
+	1    6250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F441A2B
+P 7350 2350
+F 0 "#PWR?" H 7350 2100 50  0001 C CNN
+F 1 "GND" H 7355 2177 50  0000 C CNN
+F 2 "" H 7350 2350 50  0001 C CNN
+F 3 "" H 7350 2350 50  0001 C CNN
+	1    7350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F44290B
+P 8400 2350
+F 0 "#PWR?" H 8400 2100 50  0001 C CNN
+F 1 "GND" H 8405 2177 50  0000 C CNN
+F 2 "" H 8400 2350 50  0001 C CNN
+F 3 "" H 8400 2350 50  0001 C CNN
+	1    8400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 5F4435BA
+P 2950 2700
+F 0 "D4" V 2989 2582 50  0000 R CNN
+F 1 "Red LED" V 2898 2582 50  0000 R CNN
+F 2 "" H 2950 2700 50  0001 C CNN
+F 3 "~" H 2950 2700 50  0001 C CNN
+	1    2950 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F444666
+P 2950 3100
+F 0 "R4" H 3020 3146 50  0000 L CNN
+F 1 "R" H 3020 3055 50  0000 L CNN
+F 2 "" V 2880 3100 50  0001 C CNN
+F 3 "~" H 2950 3100 50  0001 C CNN
+	1    2950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3-x
+U 1 1 5F447CBE
+P 2350 2700
+F 0 "D3-x" V 2389 2582 50  0000 R CNN
+F 1 "Green LED" V 2298 2582 50  0000 R CNN
+F 2 "" H 2350 2700 50  0001 C CNN
+F 3 "~" H 2350 2700 50  0001 C CNN
+	1    2350 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3-x
+U 1 1 5F447CC8
+P 2350 3100
+F 0 "R3-x" H 2420 3146 50  0000 L CNN
+F 1 "R" H 2420 3055 50  0000 L CNN
+F 2 "" V 2280 3100 50  0001 C CNN
+F 3 "~" H 2350 3100 50  0001 C CNN
+	1    2350 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:CA56-12EWA U?
+U 1 1 5F44E8A5
+P 2850 4250
+F 0 "U?" H 2850 4917 50  0000 C CNN
+F 1 "CA56-12EWA" H 2850 4826 50  0000 C CNN
+F 2 "Display_7Segment:CA56-12EWA" H 2850 3650 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/CA56-12EWA.pdf" H 2420 4280 50  0001 C CNN
+	1    2850 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,2 +1,3 @@
 To protect ADC pin, start in 24V scale, then work down to the appropriate scale.
+If 0V is detected, reset back to 24V scale in case user is moving to a higher voltage.
 Implement some sort of hysteresis in scale-switching logic to avoid back-and-forth.

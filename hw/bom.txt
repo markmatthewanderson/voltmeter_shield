@@ -1,1 +1,4 @@
 --- BILL OF MATERIALS ---
+Terminal Block
+	https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/282837-2/A113320-ND/2187973
+
