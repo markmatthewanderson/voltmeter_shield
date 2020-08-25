@@ -5,3 +5,5 @@ Scales:
 	15V (12V nominal) 
 	30V (24V nominal)
 Scales selected with ~20% extra room to account for real-world voltages sometimes pushing the nominal boundary.
+
+Adam
