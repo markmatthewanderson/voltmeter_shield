@@ -27,6 +27,12 @@ Serial.begin(9600);              //Serial Monitor for Debugging
 
 //Set Pins to Input/Output
 
+pinMode(VIn_Pin, INPUT);
+
+//LED Output Pins
+pinMode(5V_Led_Pin, OUTPUT);
+pinMode(15V_Led_Pin, OUTPUT);
+pinMode(30V_Led_Pin, OUTPUT);
 
 
 
