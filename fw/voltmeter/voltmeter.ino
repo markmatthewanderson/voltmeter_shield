@@ -9,6 +9,7 @@
 
 //Pin Definitions
 
+
 int ADC_Scale = 5;    //Voltage Scale for ADC
 int VIn_Pin = 3;      //Pin Reading Analog Voltage
 
@@ -66,6 +67,9 @@ if (Voltage < 5)
 void sevsegdisp()
 {
 
-%Decode voltage and output on display
+//Decode voltage and output on display
+
+int nums [] ={ 192, 249, 164, 176, 153,146,130,248,128,144};      //Array containing 0-9 byte representation for display
+
 
 }
