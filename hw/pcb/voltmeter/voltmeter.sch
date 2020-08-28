@@ -163,13 +163,13 @@ Wire Wire Line
 	8650 3900 8650 4000
 Wire Wire Line
 	8650 2850 8650 3600
-Text GLabel 8600 2850 0    50   Input ~ 0
+Text GLabel 8600 2850 0    50   UnSpc ~ 0
 15vLeg
-Text GLabel 9750 2850 0    50   Input ~ 0
+Text GLabel 9750 2850 0    50   UnSpc ~ 0
 30vLeg
-Text GLabel 4700 2800 0    50   Output ~ 0
+Text GLabel 4700 2900 0    50   UnSpc ~ 0
 15vLeg
-Text GLabel 4700 2900 0    50   Output ~ 0
+Text GLabel 4700 3000 0    50   UnSpc ~ 0
 30vLeg
 $Comp
 L Device:R R3-3
@@ -197,19 +197,16 @@ Wire Wire Line
 	10650 4300 10650 4400
 Wire Wire Line
 	10650 3900 10650 4000
-Text GLabel 10600 3600 0    50   Input ~ 0
+Text GLabel 10600 3600 0    50   UnSpc ~ 0
 5vLeg
-Text GLabel 4700 2700 0    50   Output ~ 0
+Text GLabel 4700 2800 0    50   UnSpc ~ 0
 5vLeg
 Wire Wire Line
 	9550 1300 9550 850 
-Text GLabel 8800 2050 0    50   Output ~ 0
-ADC
-Text GLabel 5700 3300 2    50   Input ~ 0
-ADC
-Wire Wire Line
-	8800 2050 8950 2050
-Connection ~ 8950 2050
+Text GLabel 6900 1950 0    50   UnSpc ~ 0
+ADC-Unity
+Text GLabel 5700 3300 2    50   UnSpc ~ 0
+ADC-Unity
 Wire Wire Line
 	8600 2850 8650 2850
 Wire Wire Line
@@ -362,4 +359,128 @@ F 12 "Active" H 10850 5000 60  0001 L CNN "Status"
 $EndComp
 Text Label 9200 2050 0    50   ~ 0
 VoltageDivider
+$Comp
+L dk_PMIC-Voltage-Reference:MCP1541T-I_TT VR?
+U 1 1 5F4868C2
+P 6350 1100
+F 0 "VR?" H 6350 1365 50  0000 C CNN
+F 1 "MCP1541T-I_TT" H 6350 1274 50  0000 C CNN
+F 2 "digikey-footprints:SOT-23-3" H 6550 1300 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331" H 6550 1400 60  0001 L CNN
+F 4 "MCP1541T-I/TTCT-ND" H 6550 1500 60  0001 L CNN "Digi-Key_PN"
+F 5 "MCP1541T-I/TT" H 6550 1600 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6550 1700 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Reference" H 6550 1800 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331" H 6550 1900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/MCP1541T-I-TT/MCP1541T-I-TTCT-ND/1979818" H 6550 2000 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC VREF SERIES 4.096V SOT23-3" H 6550 2100 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 6550 2200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6550 2300 60  0001 L CNN "Status"
+	1    6350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F4BD11F
+P 8450 1500
+F 0 "#PWR0107" H 8450 1250 50  0001 C CNN
+F 1 "GND" H 8455 1327 50  0000 C CNN
+F 2 "" H 8450 1500 50  0001 C CNN
+F 3 "" H 8450 1500 50  0001 C CNN
+	1    8450 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 2300 1    50   UnSpc ~ 0
+VCC
+Text GLabel 8450 900  1    50   UnSpc ~ 0
+VCC
+$Comp
+L Device:R R3-4
+U 1 1 5F4CB52D
+P 10650 5400
+F 0 "R3-4" H 10720 5446 50  0000 L CNN
+F 1 "86.6" H 10720 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10580 5400 50  0001 C CNN
+F 3 "~" H 10650 5400 50  0001 C CNN
+	1    10650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F4CB533
+P 10650 5650
+F 0 "#PWR0108" H 10650 5400 50  0001 C CNN
+F 1 "GND" H 10655 5477 50  0000 C CNN
+F 2 "" H 10650 5650 50  0001 C CNN
+F 3 "" H 10650 5650 50  0001 C CNN
+	1    10650 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 5550 10650 5650
+Wire Wire Line
+	10650 5150 10650 5250
+Text GLabel 10600 4850 0    50   UnSpc ~ 0
+1.2vLeg
+Wire Wire Line
+	10600 4850 10650 4850
+$Comp
+L dk_LED-Indication-Discrete:LTST-C150TBKT D3-4
+U 1 1 5F4CB546
+P 10650 5050
+F 0 "D3-4" V 10600 5228 60  0000 L CNN
+F 1 "LTST-C150TBKT" V 10653 5228 60  0001 L CNN
+F 2 "digikey-footprints:1206" H 10850 5250 60  0001 L CNN
+F 3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf" H 10850 5350 60  0001 L CNN
+F 4 "160-1643-1-ND" H 10850 5450 60  0001 L CNN "Digi-Key_PN"
+F 5 "LTST-C150TBKT" H 10850 5550 60  0001 L CNN "MPN"
+F 6 "Optoelectronics" H 10850 5650 60  0001 L CNN "Category"
+F 7 "LED Indication - Discrete" H 10850 5750 60  0001 L CNN "Family"
+F 8 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf" H 10850 5850 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584" H 10850 5950 60  0001 L CNN "DK_Detail_Page"
+F 10 "LED BLUE CLEAR 1206 SMD" H 10850 6050 60  0001 L CNN "Description"
+F 11 "Lite-On Inc." H 10850 6150 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 10850 6250 60  0001 L CNN "Status"
+	1    10650 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 4700 2700 0    50   UnSpc ~ 0
+1.2vLeg
+Text GLabel 5700 3400 2    50   UnSpc ~ 0
+ADC-Gain
+Text GLabel 6900 2650 0    50   UnSpc ~ 0
+ADC-Gain
+$Comp
+L Amplifier_Operational:TL062 U?
+U 1 1 5F4CF15C
+P 7400 1950
+F 0 "U?" H 7400 2317 50  0000 C CNN
+F 1 "TL062" H 7400 2226 50  0000 C CNN
+F 2 "footprints:TL062CDR" H 7400 1950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7400 1950 50  0001 C CNN
+	1    7400 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL062 U?
+U 2 1 5F4D172B
+P 7400 2650
+F 0 "U?" H 7400 3017 50  0000 C CNN
+F 1 "TL062" H 7400 2926 50  0000 C CNN
+F 2 "footprints:TL062CDR" H 7400 2650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7400 2650 50  0001 C CNN
+	2    7400 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL062 U?
+U 3 1 5F4D3B6F
+P 8550 1200
+F 0 "U?" H 8508 1246 50  0000 L CNN
+F 1 "TL062" H 8508 1155 50  0000 L CNN
+F 2 "footprints:TL062CDR" H 8550 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 8550 1200 50  0001 C CNN
+	3    8550 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

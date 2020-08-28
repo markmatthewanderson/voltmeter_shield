@@ -217,10 +217,10 @@ Wire Wire Line
 Wire Wire Line
 	10600 3600 10650 3600
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 5F4E0CF3
 P 5200 4500
-F 0 "#PWR?" H 5200 4250 50  0001 C CNN
+F 0 "#PWR0106" H 5200 4250 50  0001 C CNN
 F 1 "GND" H 5205 4327 50  0000 C CNN
 F 2 "" H 5200 4500 50  0001 C CNN
 F 3 "" H 5200 4500 50  0001 C CNN
@@ -360,4 +360,6 @@ F 12 "Active" H 10850 5000 60  0001 L CNN "Status"
 	1    10650 3800
 	0    1    1    0   
 $EndComp
+Text Label 9200 2050 0    50   ~ 0
+VoltageDivider
 $EndSCHEMATC
