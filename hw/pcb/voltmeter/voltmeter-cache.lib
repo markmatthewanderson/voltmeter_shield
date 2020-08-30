@@ -1,71 +1,38 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Screw_Terminal_01x02
+# Amplifier_Operational_TL062
 #
-DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+DEF Amplifier_Operational_TL062 U 0 5 Y Y 3 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "Amplifier_Operational_TL062" 0 -200 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS LM358 AD8620 LMC6062 LMC6082 TL062 TL072 TL082 NE5532 SA5532 RC4558 RC4560 RC4580 LMV358 TS912 TSV912IDT TSV912IST TLC272 TLC277 MCP602 OPA1678 OPA2134 OPA2340 OPA2376xxD OPA2376xxDGK MC33078 MC33178 LM4562 OP249 OP275 ADA4075-2 MCP6002-xP MCP6002-xSN MCP6002-xMS LM7332 OPA2333xxD OPA2333xxDGK LMC6482 LT1492 LTC6081xMS8 LM6172 MCP6L92 NJM2043 NJM2114 NJM4556A NJM4558 NJM4559 NJM4560 NJM4580 NJM5532 ADA4807-2ARM OPA2691 LT6234 OPA2356xxD OPA2356xxDGK OPA1612AxD MC33172 OPA1602 TLV2372 LT6237 OPA2277 MCP6022
 $FPLIST
- TerminalBlock*:*
+ SOIC*3.9x4.9mm*P1.27mm*
+ DIP*W7.62mm*
+ TO*99*
+ OnSemi*Micro8*
+ TSSOP*3x3mm*P0.65mm*
+ TSSOP*4.4x3mm*P0.65mm*
+ MSOP*3x3mm*P0.65mm*
+ SSOP*3.9x4.9mm*P0.635mm*
+ LFCSP*2x2mm*P0.5mm*
+ *SIP*
+ SOIC*5.3x6.2mm*P1.27mm*
 $ENDFPLIST
 DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_D_Zener
-#
-DEF Device_D_Zener D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_Zener" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 3 0 1 10 -50 -50 -50 50 -30 50 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_LED
-#
-DEF Device_LED D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_LED" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- LED*
- LED_SMD:*
- LED_THT:*
-$ENDFPLIST
-DRAW
-P 2 0 1 10 -50 -50 -50 50 N
-P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 10 50 -50 50 50 -50 0 50 -50 N
-P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
-P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
+P 4 1 1 10 -200 200 200 0 -200 -200 -200 200 f
+P 4 2 1 10 -200 200 200 0 -200 -200 -200 200 f
+X ~ 1 300 0 100 L 50 50 1 1 O
+X - 2 -300 -100 100 R 50 50 1 1 I
+X + 3 -300 100 100 R 50 50 1 1 I
+X + 5 -300 100 100 R 50 50 2 1 I
+X - 6 -300 -100 100 R 50 50 2 1 I
+X ~ 7 300 0 100 L 50 50 2 1 O
+X V- 4 -100 -300 150 U 50 50 3 1 W
+X V+ 8 -100 300 150 D 50 50 3 1 W
 ENDDRAW
 ENDDEF
 #
@@ -133,57 +100,101 @@ X A0 9 500 0 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# dk_Logic-Shift-Registers_SN74HC595N
+# dk_LED-Indication-Discrete_LTST-C150TBKT
 #
-DEF dk_Logic-Shift-Registers_SN74HC595N U 0 40 Y Y 1 F N
-F0 "U" -450 650 60 H V C CNN
-F1 "dk_Logic-Shift-Registers_SN74HC595N" -150 0 60 V V C CNN
-F2 "digikey-footprints:DIP-16_W7.62mm" 200 200 60 H I L CNN
-F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595" 200 300 60 H I L CNN
-F4 "296-1600-5-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "SN74HC595N" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "Logic - Shift Registers" 200 700 60 H I L CNN "Family"
-F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/texas-instruments/SN74HC595N/296-1600-5-ND/277246" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC 8-BIT SHIFT REGISTER 16-DIP" 200 1000 60 H I L CNN "Description"
-F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+DEF dk_LED-Indication-Discrete_LTST-C150TBKT D 0 0 Y Y 1 F N
+F0 "D" -150 100 60 H V C CNN
+F1 "dk_LED-Indication-Discrete_LTST-C150TBKT" -50 -150 60 H V C CNN
+F2 "digikey-footprints:1206" 200 200 60 H I L CNN
+F3 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf" 200 300 60 H I L CNN
+F4 "160-1643-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LTST-C150TBKT" 200 500 60 H I L CNN "MPN"
+F6 "Optoelectronics" 200 600 60 H I L CNN "Category"
+F7 "LED Indication - Discrete" 200 700 60 H I L CNN "Family"
+F8 "http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "LED BLUE CLEAR 1206 SMD" 200 1000 60 H I L CNN "Description"
+F11 "Lite-On Inc." 200 1100 60 H I L CNN "Manufacturer"
 F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
-S -500 600 100 -500 0 1 0 f
-X QB 1 200 300 100 L 50 50 1 1 O
-X ~SRCLR 10 -600 -100 100 R 50 50 1 1 I
-X SRCLK 11 -600 0 100 R 50 50 1 1 I
-X RCLK 12 -600 100 100 R 50 50 1 1 I
-X ~OE 13 -600 200 100 R 50 50 1 1 I
-X SER 14 -600 300 100 R 50 50 1 1 I
-X QA 15 200 400 100 L 50 50 1 1 O
-X VCC 16 -200 700 100 D 50 50 1 1 W
-X QC 2 200 200 100 L 50 50 1 1 O
-X QD 3 200 100 100 L 50 50 1 1 O
-X QE 4 200 0 100 L 50 50 1 1 O
-X QF 5 200 -100 100 L 50 50 1 1 O
-X QG 6 200 -200 100 L 50 50 1 1 O
-X QH 7 200 -300 100 L 50 50 1 1 O
-X GND 8 -300 -600 100 U 50 50 1 1 W
-X QH' 9 200 -400 100 L 50 50 1 1 O
+P 2 0 1 0 -25 150 -75 100 N
+P 2 0 1 0 0 50 0 -50 N
+P 2 0 1 0 25 125 -25 75 N
+P 3 0 1 0 -50 150 -25 150 -25 125 N
+P 3 0 1 0 0 125 25 125 25 100 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 F
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 100 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# dk_Transistors-FETs-MOSFETs-Single_2N7000
+# dk_PMIC-Voltage-Reference_MCP1541T-I_TT
 #
-DEF dk_Transistors-FETs-MOSFETs-Single_2N7000 Q 0 0 Y Y 1 F N
+DEF dk_PMIC-Voltage-Reference_MCP1541T-I_TT VR 0 15 Y Y 1 F N
+F0 "VR" 0 150 50 H V C CNN
+F1 "dk_PMIC-Voltage-Reference_MCP1541T-I_TT" 0 250 50 H V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
+F3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331" 200 300 60 H I L CNN
+F4 "MCP1541T-I/TTCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "MCP1541T-I/TT" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Reference" 200 700 60 H I L CNN "Family"
+F8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/microchip-technology/MCP1541T-I-TT/MCP1541T-I-TTCT-ND/1979818" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC VREF SERIES 4.096V SOT23-3" 200 1000 60 H I L CNN "Description"
+F11 "Microchip Technology" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 100 200 -200 0 1 0 f
+X VIN 1 -300 0 100 R 50 50 1 1 W
+X VOUT 2 300 0 100 L 50 50 1 1 O
+X VSS 3 0 -300 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_Terminal-Blocks-Wire-to-Board_1935161
+#
+DEF dk_Terminal-Blocks-Wire-to-Board_1935161 J 0 40 Y Y 1 F N
+F0 "J" -50 200 50 H V R CNN
+F1 "dk_Terminal-Blocks-Wire-to-Board_1935161" 50 -100 50 H V C CNN
+F2 "digikey-footprints:Terminal_Block_D1.3mm_P5mm" 200 200 60 H I L CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" 200 300 60 H I L CNN
+F4 "277-1667-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "1935161" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Terminal Blocks - Wire to Board" 200 700 60 H I L CNN "Family"
+F8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" 200 1000 60 H I L CNN "Description"
+F11 "Phoenix Contact" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 25 0 1 0 N
+C 100 0 25 0 1 0 N
+S -50 100 150 -50 0 1 0 f
+P 2 0 1 0 0 25 0 -25 N
+P 2 0 1 0 25 0 -25 0 N
+P 2 0 1 0 75 0 125 0 N
+P 2 0 1 0 100 25 100 -25 N
+X ~ 1 0 200 100 D 50 50 1 1 P
+X ~ 2 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Transistors-FETs-MOSFETs-Single_2N7002
+#
+DEF dk_Transistors-FETs-MOSFETs-Single_2N7002 Q 0 0 Y Y 1 F N
 F0 "Q" -106 143 60 H V R CNN
-F1 "dk_Transistors-FETs-MOSFETs-Single_2N7000" 136 0 60 V V C CNN
-F2 "digikey-footprints:TO-92-3" 200 200 60 H I L CNN
+F1 "dk_Transistors-FETs-MOSFETs-Single_2N7002" 136 0 60 V V C CNN
+F2 "digikey-footprints:SOT-23-3" 200 200 60 H I L CNN
 F3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" 200 300 60 H I L CNN
-F4 "2N7000FS-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "2N7000" 200 500 60 H I L CNN "MPN"
+F4 "2N7002NCT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "2N7002" 200 500 60 H I L CNN "MPN"
 F6 "Discrete Semiconductor Products" 200 600 60 H I L CNN "Category"
 F7 "Transistors - FETs, MOSFETs - Single" 200 700 60 H I L CNN "Family"
 F8 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/on-semiconductor/2N7000/2N7000FS-ND/244278" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "MOSFET N-CH 60V 200MA TO-92" 200 1000 60 H I L CNN "Description"
+F9 "/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "MOSFET N-CH 60V 115MA SOT-23" 200 1000 60 H I L CNN "Description"
 F11 "ON Semiconductor" 200 1100 60 H I L CNN "Manufacturer"
 F12 "Active" 200 1200 60 H I L CNN "Status"
 DRAW
@@ -204,8 +215,8 @@ P 2 1 1 0 -100 75 -100 35 N
 P 2 1 1 0 60 20 20 20 N
 P 4 1 1 0 -100 0 -70 20 -70 -20 -100 0 F
 P 4 1 1 0 40 20 20 -10 60 -10 40 20 F
-X S 1 0 -200 100 U 50 50 1 1 B
-X G 2 -300 -100 100 R 50 50 1 1 B
+X G 1 -300 -100 100 R 50 50 1 1 B
+X S 2 0 -200 100 U 50 50 1 1 B
 X D 3 0 200 100 D 50 50 1 1 B
 ENDDRAW
 ENDDEF
