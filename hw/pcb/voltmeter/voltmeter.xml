@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\Mark\Projects\voltmeter_shield\hw\pcb\voltmeter\voltmeter.sch</source>
+    <date>8/30/2020 10:19:46 PM</date>
+    <tool>Eeschema (5.1.6)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>voltmeter.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="A0">
+      <value>Arduino_UNO_R3</value>
+      <footprint>Module:Arduino_UNO_R3</footprint>
+      <datasheet>https://www.arduino.cc/en/Main/arduinoBoardUno</datasheet>
+      <libsource lib="MCU_Module" part="Arduino_UNO_R3" description="Arduino UNO Microcontroller Module, release 3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F417551</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>86.6</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F447CC8</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1.58M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERJ-6ENF1584V/P1-58BTCT-ND/4429143</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F46E236</tstamp>
+    </comp>
+    <comp ref="R0">
+      <value>10M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F46F9BE</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>86.6</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F479368</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>86.6</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F49186F</tstamp>
+    </comp>
+    <comp ref="J0">
+      <value>1935161</value>
+      <footprint>digikey-footprints:Terminal_Block_D1.3mm_P5mm</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf</datasheet>
+      <fields>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="DK_Datasheet_Link">https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614</field>
+        <field name="Description">TERM BLK 2POS SIDE ENTRY 5MM PCB</field>
+        <field name="Digi-Key_PN">277-1667-ND</field>
+        <field name="Family">Terminal Blocks - Wire to Board</field>
+        <field name="MPN">1935161</field>
+        <field name="Manufacturer">Phoenix Contact</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Terminal-Blocks-Wire-to-Board" part="1935161" description="TERM BLK 2POS SIDE ENTRY 5MM PCB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F45D83E</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>2N7002</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664</field>
+        <field name="Description">MOSFET N-CH 60V 115MA SOT-23</field>
+        <field name="Digi-Key_PN">2N7002NCT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">2N7002</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="2N7002" description="MOSFET N-CH 60V 115MA SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F461EDF</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>2N7002</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664</field>
+        <field name="Description">MOSFET N-CH 60V 115MA SOT-23</field>
+        <field name="Digi-Key_PN">2N7002NCT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">2N7002</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="2N7002" description="MOSFET N-CH 60V 115MA SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F465F22</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LTST-C150TBKT</value>
+      <footprint>digikey-footprints:1206</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</datasheet>
+      <fields>
+        <field name="Category">Optoelectronics</field>
+        <field name="DK_Datasheet_Link">http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584</field>
+        <field name="Description">LED BLUE CLEAR 1206 SMD</field>
+        <field name="Digi-Key_PN">160-1643-1-ND</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="MPN">LTST-C150TBKT</field>
+        <field name="Manufacturer">Lite-On Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_LED-Indication-Discrete" part="LTST-C150TBKT" description="LED BLUE CLEAR 1206 SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F46DB04</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LTST-C150TBKT</value>
+      <footprint>digikey-footprints:1206</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</datasheet>
+      <fields>
+        <field name="Category">Optoelectronics</field>
+        <field name="DK_Datasheet_Link">http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584</field>
+        <field name="Description">LED BLUE CLEAR 1206 SMD</field>
+        <field name="Digi-Key_PN">160-1643-1-ND</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="MPN">LTST-C150TBKT</field>
+        <field name="Manufacturer">Lite-On Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_LED-Indication-Discrete" part="LTST-C150TBKT" description="LED BLUE CLEAR 1206 SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F474ABC</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LTST-C150TBKT</value>
+      <footprint>digikey-footprints:1206</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</datasheet>
+      <fields>
+        <field name="Category">Optoelectronics</field>
+        <field name="DK_Datasheet_Link">http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584</field>
+        <field name="Description">LED BLUE CLEAR 1206 SMD</field>
+        <field name="Digi-Key_PN">160-1643-1-ND</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="MPN">LTST-C150TBKT</field>
+        <field name="Manufacturer">Lite-On Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_LED-Indication-Discrete" part="LTST-C150TBKT" description="LED BLUE CLEAR 1206 SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F476FAA</tstamp>
+    </comp>
+    <comp ref="VR1">
+      <value>MCP1541T-I_TT</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331</datasheet>
+      <fields>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="DK_Datasheet_Link">http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331</field>
+        <field name="DK_Detail_Page">/product-detail/en/microchip-technology/MCP1541T-I-TT/MCP1541T-I-TTCT-ND/1979818</field>
+        <field name="Description">IC VREF SERIES 4.096V SOT23-3</field>
+        <field name="Digi-Key_PN">MCP1541T-I/TTCT-ND</field>
+        <field name="Family">PMIC - Voltage Reference</field>
+        <field name="MPN">MCP1541T-I/TT</field>
+        <field name="Manufacturer">Microchip Technology</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_PMIC-Voltage-Reference" part="MCP1541T-I_TT" description="IC VREF SERIES 4.096V SOT23-3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4868C2</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>86.6</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4CB52D</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LTST-C150TBKT</value>
+      <footprint>digikey-footprints:1206</footprint>
+      <datasheet>http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</datasheet>
+      <fields>
+        <field name="Category">Optoelectronics</field>
+        <field name="DK_Datasheet_Link">http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584</field>
+        <field name="Description">LED BLUE CLEAR 1206 SMD</field>
+        <field name="Digi-Key_PN">160-1643-1-ND</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="MPN">LTST-C150TBKT</field>
+        <field name="Manufacturer">Lite-On Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_LED-Indication-Discrete" part="LTST-C150TBKT" description="LED BLUE CLEAR 1206 SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4CB546</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>TL062</value>
+      <footprint>footprints:TL062CDR</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tl061.pdf</datasheet>
+      <libsource lib="Amplifier_Operational" part="TL062" description="Dual Low-Power JFET-Input Operational Amplifiers, DIP-8/SOIC-8/SSOP-8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4CF15C</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4C5E92</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4C90BC</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4D596A</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4E664E</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>4.12K</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/panasonic-electronic-components/ERA-6AEB4121V/P4-12KDACT-ND/3075127</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F4E96D6</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>3.74M</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/vishay-dale/CRCW08053M74FKEA/541-3-74MCCT-ND/1181191</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F46CF78</tstamp>
+    </comp>
+    <comp ref="LED1">
+      <value>LDQ-M284RI</value>
+      <footprint>footprints3:LDQ-M284RI</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632</datasheet>
+      <libsource lib="2020-08-31_02-39-33" part="LDQ-M284RI" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F5292F1</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>SN74HC595DR</value>
+      <footprint>footprints2:SN74HC595DR</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595DR/296-14857-1-ND/562567</datasheet>
+      <libsource lib="2020-08-31_02-24-53" part="SN74HC595DR" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F51CDAA</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F621FC7</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6BF4F6</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6C4010</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6C8ADB</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6CD5B2</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6D208A</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6D6B5D</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>300</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6DB676</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="2020-08-31_02-24-53" part="SN74HC595DR">
+      <footprints>
+        <fp>D16</fp>
+        <fp>D16-M</fp>
+        <fp>D16-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SN74HC595DR</field>
+        <field name="Footprint">D16</field>
+      </fields>
+      <pins>
+        <pin num="1" name="QB" type="output"/>
+        <pin num="2" name="QC" type="output"/>
+        <pin num="3" name="QD" type="output"/>
+        <pin num="4" name="QE" type="output"/>
+        <pin num="5" name="QF" type="output"/>
+        <pin num="6" name="QG" type="output"/>
+        <pin num="7" name="QH" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="QH_2" type="output"/>
+        <pin num="10" name="*SRCLR" type="input"/>
+        <pin num="11" name="SRCLK" type="input"/>
+        <pin num="12" name="RCLK" type="input"/>
+        <pin num="13" name="*OE" type="input"/>
+        <pin num="14" name="SER" type="input"/>
+        <pin num="15" name="QA" type="output"/>
+        <pin num="16" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="2020-08-31_02-39-33" part="LDQ-M284RI">
+      <footprints>
+        <fp>LDQ-M284RI_LUM</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value">LDQ-M284RI</field>
+        <field name="Footprint">LDQ-M284RI_LUM</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspc"/>
+        <pin num="2" name="2" type="unspc"/>
+        <pin num="3" name="3" type="unspc"/>
+        <pin num="4" name="4" type="unspc"/>
+        <pin num="5" name="5" type="unspc"/>
+        <pin num="6" name="6" type="unspc"/>
+        <pin num="7" name="7" type="unspc"/>
+        <pin num="8" name="8" type="unspc"/>
+        <pin num="9" name="9" type="unspc"/>
+        <pin num="10" name="10" type="unspc"/>
+        <pin num="11" name="11" type="unspc"/>
+        <pin num="12" name="12" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Amplifier_Operational" part="LM2904">
+      <aliases>
+        <alias>LM358</alias>
+        <alias>AD8620</alias>
+        <alias>LMC6062</alias>
+        <alias>LMC6082</alias>
+        <alias>TL062</alias>
+        <alias>TL072</alias>
+        <alias>TL082</alias>
+        <alias>NE5532</alias>
+        <alias>SA5532</alias>
+        <alias>RC4558</alias>
+        <alias>RC4560</alias>
+        <alias>RC4580</alias>
+        <alias>LMV358</alias>
+        <alias>TS912</alias>
+        <alias>TSV912IDT</alias>
+        <alias>TSV912IST</alias>
+        <alias>TLC272</alias>
+        <alias>TLC277</alias>
+        <alias>MCP602</alias>
+        <alias>OPA1678</alias>
+        <alias>OPA2134</alias>
+        <alias>OPA2340</alias>
+        <alias>OPA2376xxD</alias>
+        <alias>OPA2376xxDGK</alias>
+        <alias>MC33078</alias>
+        <alias>MC33178</alias>
+        <alias>LM4562</alias>
+        <alias>OP249</alias>
+        <alias>OP275</alias>
+        <alias>ADA4075-2</alias>
+        <alias>MCP6002-xP</alias>
+        <alias>MCP6002-xSN</alias>
+        <alias>MCP6002-xMS</alias>
+        <alias>LM7332</alias>
+        <alias>OPA2333xxD</alias>
+        <alias>OPA2333xxDGK</alias>
+        <alias>LMC6482</alias>
+        <alias>LT1492</alias>
+        <alias>LTC6081xMS8</alias>
+        <alias>LM6172</alias>
+        <alias>MCP6L92</alias>
+        <alias>NJM2043</alias>
+        <alias>NJM2114</alias>
+        <alias>NJM4556A</alias>
+        <alias>NJM4558</alias>
+        <alias>NJM4559</alias>
+        <alias>NJM4560</alias>
+        <alias>NJM4580</alias>
+        <alias>NJM5532</alias>
+        <alias>ADA4807-2ARM</alias>
+        <alias>OPA2691</alias>
+        <alias>LT6234</alias>
+        <alias>OPA2356xxD</alias>
+        <alias>OPA2356xxDGK</alias>
+        <alias>OPA1612AxD</alias>
+        <alias>MC33172</alias>
+        <alias>OPA1602</alias>
+        <alias>TLV2372</alias>
+        <alias>LT6237</alias>
+        <alias>OPA2277</alias>
+        <alias>MCP6022</alias>
+      </aliases>
+      <description>Dual Operational Amplifiers, DIP-8/SOIC-8/TSSOP-8/VSSOP-8</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm358.pdf</docs>
+      <footprints>
+        <fp>SOIC*3.9x4.9mm*P1.27mm*</fp>
+        <fp>DIP*W7.62mm*</fp>
+        <fp>TO*99*</fp>
+        <fp>OnSemi*Micro8*</fp>
+        <fp>TSSOP*3x3mm*P0.65mm*</fp>
+        <fp>TSSOP*4.4x3mm*P0.65mm*</fp>
+        <fp>MSOP*3x3mm*P0.65mm*</fp>
+        <fp>SSOP*3.9x4.9mm*P0.635mm*</fp>
+        <fp>LFCSP*2x2mm*P0.5mm*</fp>
+        <fp>*SIP*</fp>
+        <fp>SOIC*5.3x6.2mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2904</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="V-" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="~" type="output"/>
+        <pin num="8" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_Module" part="Arduino_UNO_R3">
+      <description>Arduino UNO Microcontroller Module, release 3</description>
+      <docs>https://www.arduino.cc/en/Main/arduinoBoardUno</docs>
+      <footprints>
+        <fp>Arduino*UNO*R3*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_UNO_R3</field>
+        <field name="Footprint">Module:Arduino_UNO_R3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="NotConnected"/>
+        <pin num="2" name="IOREF" type="output"/>
+        <pin num="3" name="~RESET" type="input"/>
+        <pin num="4" name="3V3" type="power_out"/>
+        <pin num="5" name="+5V" type="power_out"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VIN" type="power_in"/>
+        <pin num="9" name="A0" type="BiDi"/>
+        <pin num="10" name="A1" type="BiDi"/>
+        <pin num="11" name="A2" type="BiDi"/>
+        <pin num="12" name="A3" type="BiDi"/>
+        <pin num="13" name="SDA/A4" type="BiDi"/>
+        <pin num="14" name="SCL/A5" type="BiDi"/>
+        <pin num="15" name="D0/RX" type="BiDi"/>
+        <pin num="16" name="D1/TX" type="BiDi"/>
+        <pin num="17" name="D2" type="BiDi"/>
+        <pin num="18" name="D3" type="BiDi"/>
+        <pin num="19" name="D4" type="BiDi"/>
+        <pin num="20" name="D5" type="BiDi"/>
+        <pin num="21" name="D6" type="BiDi"/>
+        <pin num="22" name="D7" type="BiDi"/>
+        <pin num="23" name="D8" type="BiDi"/>
+        <pin num="24" name="D9" type="BiDi"/>
+        <pin num="25" name="D10" type="BiDi"/>
+        <pin num="26" name="D11" type="BiDi"/>
+        <pin num="27" name="D12" type="BiDi"/>
+        <pin num="28" name="D13" type="BiDi"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="AREF" type="input"/>
+        <pin num="31" name="SDA/A4" type="BiDi"/>
+        <pin num="32" name="SCL/A5" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_LED-Indication-Discrete" part="LTST-C150TBKT">
+      <description>LED BLUE CLEAR 1206 SMD</description>
+      <docs>http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LTST-C150TBKT</field>
+        <field name="Footprint">digikey-footprints:1206</field>
+        <field name="Datasheet">http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</field>
+        <field name="Digi-Key_PN">160-1643-1-ND</field>
+        <field name="MPN">LTST-C150TBKT</field>
+        <field name="Category">Optoelectronics</field>
+        <field name="Family">LED Indication - Discrete</field>
+        <field name="DK_Datasheet_Link">http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584</field>
+        <field name="Description">LED BLUE CLEAR 1206 SMD</field>
+        <field name="Manufacturer">Lite-On Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_PMIC-Voltage-Reference" part="MCP1541T-I_TT">
+      <description>IC VREF SERIES 4.096V SOT23-3</description>
+      <docs>http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331</docs>
+      <fields>
+        <field name="Reference">VR</field>
+        <field name="Value">MCP1541T-I_TT</field>
+        <field name="Footprint">digikey-footprints:SOT-23-3</field>
+        <field name="Datasheet">http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331</field>
+        <field name="Digi-Key_PN">MCP1541T-I/TTCT-ND</field>
+        <field name="MPN">MCP1541T-I/TT</field>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="Family">PMIC - Voltage Reference</field>
+        <field name="DK_Datasheet_Link">http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en011331</field>
+        <field name="DK_Detail_Page">/product-detail/en/microchip-technology/MCP1541T-I-TT/MCP1541T-I-TTCT-ND/1979818</field>
+        <field name="Description">IC VREF SERIES 4.096V SOT23-3</field>
+        <field name="Manufacturer">Microchip Technology</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="power_in"/>
+        <pin num="2" name="VOUT" type="output"/>
+        <pin num="3" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Terminal-Blocks-Wire-to-Board" part="1935161">
+      <description>TERM BLK 2POS SIDE ENTRY 5MM PCB</description>
+      <docs>https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">1935161</field>
+        <field name="Footprint">digikey-footprints:Terminal_Block_D1.3mm_P5mm</field>
+        <field name="Datasheet">https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf</field>
+        <field name="Digi-Key_PN">277-1667-ND</field>
+        <field name="MPN">1935161</field>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="Family">Terminal Blocks - Wire to Board</field>
+        <field name="DK_Datasheet_Link">https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614</field>
+        <field name="Description">TERM BLK 2POS SIDE ENTRY 5MM PCB</field>
+        <field name="Manufacturer">Phoenix Contact</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Transistors-FETs-MOSFETs-Single" part="2N7002">
+      <description>MOSFET N-CH 60V 115MA SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N7002</field>
+        <field name="Footprint">digikey-footprints:SOT-23-3</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</field>
+        <field name="Digi-Key_PN">2N7002NCT-ND</field>
+        <field name="MPN">2N7002</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/2N7002/2N7002NCT-ND/244664</field>
+        <field name="Description">MOSFET N-CH 60V 115MA SOT-23</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="BiDi"/>
+        <pin num="2" name="S" type="BiDi"/>
+        <pin num="3" name="D" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="2020-08-31_02-24-53">
+      <uri>D:\Mark\Projects\kicad-library\ul_SN74HC595DR\KiCAD\2020-08-31_02-24-53\2020-08-31_02-24-53.lib</uri>
+    </library>
+    <library logical="2020-08-31_02-39-33">
+      <uri>D:\Mark\Projects\kicad-library\ul_LDQM284RI\KiCAD\2020-08-31_02-39-33\2020-08-31_02-39-33.lib</uri>
+    </library>
+    <library logical="Amplifier_Operational">
+      <uri>D:\Program Files\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>D:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="MCU_Module">
+      <uri>D:\Program Files\KiCad\share\kicad\library/MCU_Module.lib</uri>
+    </library>
+    <library logical="dk_LED-Indication-Discrete">
+      <uri>D:/Mark/Projects/digikey-kicad-library/digikey-symbols/dk_LED-Indication-Discrete.lib</uri>
+    </library>
+    <library logical="dk_PMIC-Voltage-Reference">
+      <uri>D:/Mark/Projects/digikey-kicad-library/digikey-symbols/dk_PMIC-Voltage-Reference.lib</uri>
+    </library>
+    <library logical="dk_Terminal-Blocks-Wire-to-Board">
+      <uri>D:/Mark/Projects/digikey-kicad-library/digikey-symbols/dk_Terminal-Blocks-Wire-to-Board.lib</uri>
+    </library>
+    <library logical="dk_Transistors-FETs-MOSFETs-Single">
+      <uri>D:/Mark/Projects/digikey-kicad-library/digikey-symbols/dk_Transistors-FETs-MOSFETs-Single.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(A0-Pad19)">
+      <node ref="A0" pin="19"/>
+      <node ref="LED1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(Q1-Pad3)">
+      <node ref="Q1" pin="3"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="4" name="Net-(A0-Pad28)">
+      <node ref="U1" pin="11"/>
+      <node ref="A0" pin="28"/>
+    </net>
+    <net code="5" name="Net-(A0-Pad26)">
+      <node ref="U1" pin="14"/>
+      <node ref="A0" pin="26"/>
+    </net>
+    <net code="6" name="Net-(A0-Pad25)">
+      <node ref="A0" pin="25"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="7" name="Net-(A0-Pad21)">
+      <node ref="A0" pin="21"/>
+      <node ref="LED1" pin="11"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="R15" pin="2"/>
+      <node ref="U1" pin="13"/>
+      <node ref="A0" pin="29"/>
+      <node ref="R16" pin="2"/>
+      <node ref="U1" pin="8"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="A0" pin="6"/>
+      <node ref="U1" pin="10"/>
+      <node ref="R13" pin="2"/>
+      <node ref="A0" pin="7"/>
+      <node ref="R14" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U2" pin="4"/>
+      <node ref="C3" pin="2"/>
+      <node ref="VR1" pin="3"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="J0" pin="1"/>
+    </net>
+    <net code="9" name="Net-(C1-Pad2)">
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="10" name="ADC-Gain">
+      <node ref="R11" pin="2"/>
+      <node ref="U2" pin="7"/>
+      <node ref="A0" pin="10"/>
+    </net>
+    <net code="11" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="12" name="Net-(R5-Pad2)">
+      <node ref="U1" pin="5"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="13" name="Net-(R6-Pad2)">
+      <node ref="U1" pin="4"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="14" name="Net-(R7-Pad2)">
+      <node ref="R7" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="15" name="Net-(R8-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="16" name="Net-(R9-Pad2)">
+      <node ref="U1" pin="1"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="17" name="Net-(LED1-Pad2)">
+      <node ref="LED1" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="18" name="Net-(LED1-Pad3)">
+      <node ref="LED1" pin="3"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="19" name="Net-(LED1-Pad4)">
+      <node ref="LED1" pin="4"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="20" name="Net-(LED1-Pad5)">
+      <node ref="R6" pin="1"/>
+      <node ref="LED1" pin="5"/>
+    </net>
+    <net code="21" name="Net-(LED1-Pad9)">
+      <node ref="R10" pin="1"/>
+      <node ref="LED1" pin="9"/>
+    </net>
+    <net code="22" name="Net-(LED1-Pad8)">
+      <node ref="LED1" pin="8"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="23" name="Net-(LED1-Pad7)">
+      <node ref="LED1" pin="7"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="24" name="Net-(LED1-Pad6)">
+      <node ref="R7" pin="1"/>
+      <node ref="LED1" pin="6"/>
+    </net>
+    <net code="25" name="Net-(R4-Pad2)">
+      <node ref="U1" pin="6"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="26" name="Net-(R3-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="27" name="VCC">
+      <node ref="VR1" pin="1"/>
+      <node ref="A0" pin="5"/>
+      <node ref="U1" pin="16"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="28" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="29" name="Net-(A0-Pad22)">
+      <node ref="A0" pin="22"/>
+      <node ref="LED1" pin="12"/>
+    </net>
+    <net code="30" name="Net-(A0-Pad20)">
+      <node ref="A0" pin="20"/>
+      <node ref="LED1" pin="10"/>
+    </net>
+    <net code="31" name="Net-(J0-Pad2)">
+      <node ref="R0" pin="1"/>
+      <node ref="J0" pin="2"/>
+    </net>
+    <net code="32" name="Net-(D2-Pad2)">
+      <node ref="R14" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="33" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="34" name="Net-(D3-Pad2)">
+      <node ref="R15" pin="1"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="35" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="36" name="30vLeg">
+      <node ref="A0" pin="18"/>
+      <node ref="D2" pin="1"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="37" name="Net-(A0-Pad24)">
+      <node ref="A0" pin="24"/>
+    </net>
+    <net code="38" name="Net-(A0-Pad23)">
+      <node ref="A0" pin="23"/>
+    </net>
+    <net code="39" name="Net-(A0-Pad2)">
+      <node ref="A0" pin="2"/>
+    </net>
+    <net code="40" name="Net-(A0-Pad27)">
+      <node ref="A0" pin="27"/>
+    </net>
+    <net code="41" name="15vLeg">
+      <node ref="D1" pin="1"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="A0" pin="17"/>
+    </net>
+    <net code="42" name="5vLeg">
+      <node ref="A0" pin="16"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="43" name="1.2vLeg">
+      <node ref="D4" pin="1"/>
+      <node ref="A0" pin="15"/>
+    </net>
+    <net code="44" name="Net-(A0-Pad14)">
+      <node ref="A0" pin="14"/>
+    </net>
+    <net code="45" name="Net-(A0-Pad13)">
+      <node ref="A0" pin="13"/>
+    </net>
+    <net code="46" name="Net-(A0-Pad12)">
+      <node ref="A0" pin="12"/>
+    </net>
+    <net code="47" name="Net-(A0-Pad11)">
+      <node ref="A0" pin="11"/>
+    </net>
+    <net code="48" name="ADC-Unity">
+      <node ref="U2" pin="1"/>
+      <node ref="A0" pin="9"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="49" name="Net-(A0-Pad8)">
+      <node ref="A0" pin="8"/>
+    </net>
+    <net code="50" name="Net-(A0-Pad4)">
+      <node ref="A0" pin="4"/>
+    </net>
+    <net code="51" name="Net-(A0-Pad32)">
+      <node ref="A0" pin="32"/>
+    </net>
+    <net code="52" name="Net-(A0-Pad31)">
+      <node ref="A0" pin="31"/>
+    </net>
+    <net code="53" name="AREF_4.096v">
+      <node ref="VR1" pin="2"/>
+      <node ref="A0" pin="30"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="54" name="Net-(A0-Pad3)">
+      <node ref="A0" pin="3"/>
+    </net>
+    <net code="55" name="Net-(D4-Pad2)">
+      <node ref="R16" pin="1"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="56" name="/VoltageDivider">
+      <node ref="U2" pin="5"/>
+      <node ref="U2" pin="3"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R0" pin="2"/>
+    </net>
+    <net code="57" name="Net-(A0-Pad1)">
+      <node ref="A0" pin="1"/>
+    </net>
+  </nets>
+</export>

@@ -9,4 +9,4 @@ Scales selected with ~20% extra room to account for real-world voltages sometime
 
 7-segment display w/ shift register
 
-4.096 AVcc
+4.096 AREF
