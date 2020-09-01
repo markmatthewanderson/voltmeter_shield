@@ -15,6 +15,7 @@
 int ADC_Scale = 4.096;    //Voltage Scale for ADC
 int VIn_Pin_1 = 1;          //Pin Reading Analog Voltage
 int VIn_Pin_2
+int Buffer = 20;         //20% Bufffer
 
 ///////////////////////////////////////////////////////////////
 
@@ -91,11 +92,24 @@ Voltage_2 = analogRead(VIn_Pin_2)*(ADC_Scale/1023);
 
 
 //Check to see if voltage is in the 0-5V Scale
-if (Voltage < 4.096)
+if (Voltage < ADC_Scale)
 {
 
 
+
+
 //Check to see if you need to bump up a scale or down a scale
+
+if(Voltage < (1-Buffer)*ADC_Scale)  //Setting lim on what voltage we look for to change scale
+  {
+
+   //If code running into buffer we increment to next scale. 
+
+  }
+
+
+
+
   
 }
 
