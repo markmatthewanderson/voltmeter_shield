@@ -1,9 +1,12 @@
-3-Scale Autoscaling Digital Voltmeter
+4-Scale Autoscaling Digital Voltmeter
 
 Scales:
-	6V (5V nominal)
-	15V (12V nominal) 
-	30V (24V nominal)
+	1.2V (1V nominal)
+	6V   (5V nominal)
+	15V  (12V nominal) 
+	30V  (24V nominal)
 Scales selected with ~20% extra room to account for real-world voltages sometimes pushing the nominal boundary.
 
-Adam
+7-segment display w/ shift register
+
+4.096 AREF
