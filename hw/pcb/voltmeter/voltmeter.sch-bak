@@ -883,17 +883,6 @@ Wire Wire Line
 Wire Wire Line
 	9800 4300 9800 4400
 $Comp
-L marks_library:Arduino_UNO_R3 A0
-U 1 1 5F5082FE
-P 6150 5300
-F 0 "A0" H 6150 6481 50  0000 C CNN
-F 1 "Arduino_UNO_R3" H 6150 6390 50  0000 C CNN
-F 2 "Module:Arduino_UNO_R3" H 6150 5300 50  0001 C CIN
-F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 6150 5300 50  0001 C CNN
-	1    6150 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5F4E0CF3
 P 6050 6400
@@ -905,10 +894,10 @@ F 3 "" H 6050 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0115
 U 1 1 5F5321C7
 P 6250 6400
-F 0 "#PWR?" H 6250 6150 50  0001 C CNN
+F 0 "#PWR0115" H 6250 6150 50  0001 C CNN
 F 1 "GND" H 6255 6227 50  0000 C CNN
 F 2 "" H 6250 6400 50  0001 C CNN
 F 3 "" H 6250 6400 50  0001 C CNN
@@ -916,10 +905,10 @@ F 3 "" H 6250 6400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0116
 U 1 1 5F5366D4
 P 6150 6600
-F 0 "#PWR?" H 6150 6350 50  0001 C CNN
+F 0 "#PWR0116" H 6150 6350 50  0001 C CNN
 F 1 "GND" H 6155 6427 50  0000 C CNN
 F 2 "" H 6150 6600 50  0001 C CNN
 F 3 "" H 6150 6600 50  0001 C CNN
@@ -928,4 +917,15 @@ F 3 "" H 6150 6600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 6400 6150 6600
+$Comp
+L marks_library:Arduino_UNO_R3_SHIELD A0
+U 1 1 5F54E5EB
+P 6150 5300
+F 0 "A0" H 6150 6481 50  0000 C CNN
+F 1 "Arduino_UNO_R3_SHIELD" H 6150 6390 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 6150 5300 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 6150 5300 50  0001 C CNN
+	1    6150 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

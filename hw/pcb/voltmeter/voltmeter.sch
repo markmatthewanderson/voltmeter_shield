@@ -923,7 +923,7 @@ U 1 1 5F54E5EB
 P 6150 5300
 F 0 "A0" H 6150 6481 50  0000 C CNN
 F 1 "Arduino_UNO_R3_SHIELD" H 6150 6390 50  0000 C CNN
-F 2 "Module:Arduino_UNO_R3" H 6150 5300 50  0001 C CIN
+F 2 "marks_footprint_library:Arduino_UNO_R3_SHIELD" H 6150 5300 50  0001 C CIN
 F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 6150 5300 50  0001 C CNN
 	1    6150 5300
 	1    0    0    -1  
