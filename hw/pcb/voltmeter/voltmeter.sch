@@ -449,17 +449,6 @@ F 3 "~" H 5400 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
-U 1 1 5F4C90BC
-P 6250 1050
-F 0 "C2" H 6365 1096 50  0000 L CNN
-F 1 "10u" H 6365 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 900 50  0001 C CNN
-F 3 "~" H 6250 1050 50  0001 C CNN
-	1    6250 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0109
 U 1 1 5F4CBE9E
 P 5850 1300
@@ -521,7 +510,7 @@ U 1 1 5F4D596A
 P 6650 1950
 F 0 "C3" H 6765 1996 50  0000 L CNN
 F 1 "10u" H 6765 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6688 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 6688 1800 50  0001 C CNN
 F 3 "~" H 6650 1950 50  0001 C CNN
 	1    6650 1950
 	1    0    0    -1  
@@ -870,7 +859,7 @@ P 2900 1400
 F 0 "LED0" H 3700 1893 60  0000 C CNN
 F 1 "LDQ-M284RI" H 3700 1787 60  0000 C CNN
 F 2 "footprints4:LDQ-M284RI" H 3700 1640 60  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632" H 3700 1681 60  0000 C CNN
+F 3 "https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632" H 3700 1681 60  0001 C CNN
 	1    2900 1400
 	1    0    0    -1  
 $EndComp
@@ -928,4 +917,15 @@ Wire Wire Line
 	5200 5100 5200 1700
 Wire Wire Line
 	5200 1700 4500 1700
+$Comp
+L Device:C C2
+U 1 1 5F4C90BC
+P 6250 1050
+F 0 "C2" H 6365 1096 50  0000 L CNN
+F 1 "10u" H 6365 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 6288 900 50  0001 C CNN
+F 3 "~" H 6250 1050 50  0001 C CNN
+	1    6250 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

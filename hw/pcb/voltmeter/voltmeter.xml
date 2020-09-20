@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>D:\Mark\Projects\voltmeter_shield\hw\pcb\voltmeter\voltmeter.sch</source>
-    <date>8/30/2020 10:19:46 PM</date>
+    <date>9/19/2020 7:24:10 PM</date>
     <tool>Eeschema (5.1.6)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -19,14 +19,6 @@
     </sheet>
   </design>
   <components>
-    <comp ref="A0">
-      <value>Arduino_UNO_R3</value>
-      <footprint>Module:Arduino_UNO_R3</footprint>
-      <datasheet>https://www.arduino.cc/en/Main/arduinoBoardUno</datasheet>
-      <libsource lib="MCU_Module" part="Arduino_UNO_R3" description="Arduino UNO Microcontroller Module, release 3"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5F417551</tstamp>
-    </comp>
     <comp ref="R13">
       <value>86.6</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
@@ -228,9 +220,9 @@
       <tstamp>5F4CB546</tstamp>
     </comp>
     <comp ref="U2">
-      <value>TL062</value>
+      <value>TL062CDR</value>
       <footprint>footprints:TL062CDR</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tl061.pdf</datasheet>
+      <datasheet>https://www.digikey.com/product-detail/en/texas-instruments/TL062CDR/296-1281-1-ND/276549</datasheet>
       <libsource lib="Amplifier_Operational" part="TL062" description="Dual Low-Power JFET-Input Operational Amplifiers, DIP-8/SOIC-8/SSOP-8"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F4CF15C</tstamp>
@@ -282,22 +274,6 @@
       <libsource lib="Device" part="R" description="Resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F46CF78</tstamp>
-    </comp>
-    <comp ref="LED1">
-      <value>LDQ-M284RI</value>
-      <footprint>footprints3:LDQ-M284RI</footprint>
-      <datasheet>https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632</datasheet>
-      <libsource lib="2020-08-31_02-39-33" part="LDQ-M284RI" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5F5292F1</tstamp>
-    </comp>
-    <comp ref="U1">
-      <value>SN74HC595DR</value>
-      <footprint>footprints2:SN74HC595DR</footprint>
-      <datasheet>https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595DR/296-14857-1-ND/562567</datasheet>
-      <libsource lib="2020-08-31_02-24-53" part="SN74HC595DR" description=""/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5F51CDAA</tstamp>
     </comp>
     <comp ref="R3">
       <value>300</value>
@@ -355,6 +331,30 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5F6DB676</tstamp>
     </comp>
+    <comp ref="U1">
+      <value>SN74HC595DR</value>
+      <footprint>footprints2:SN74HC595DR</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595DR/296-14857-1-ND/562567</datasheet>
+      <libsource lib="2020-08-31_02-24-53" part="SN74HC595DR" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F51CDAA</tstamp>
+    </comp>
+    <comp ref="A0">
+      <value>Arduino_UNO_R3_SHIELD</value>
+      <footprint>marks_footprint_library:Arduino_UNO_R3_SHIELD</footprint>
+      <datasheet>https://www.arduino.cc/en/Main/arduinoBoardUno</datasheet>
+      <libsource lib="marks_library" part="Arduino_UNO_R3_SHIELD" description="Arduino UNO Microcontroller Module, release 3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F54E5EB</tstamp>
+    </comp>
+    <comp ref="LED0">
+      <value>LDQ-M284RI</value>
+      <footprint>footprints4:LDQ-M284RI</footprint>
+      <datasheet>https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632</datasheet>
+      <libsource lib="2020-09-17_03-48-59" part="LDQ-M284RI" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5F6E9FDC</tstamp>
+    </comp>
   </components>
   <libparts>
     <libpart lib="2020-08-31_02-24-53" part="SN74HC595DR">
@@ -387,7 +387,7 @@
         <pin num="16" name="VCC" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="2020-08-31_02-39-33" part="LDQ-M284RI">
+    <libpart lib="2020-09-17_03-48-59" part="LDQ-M284RI">
       <footprints>
         <fp>LDQ-M284RI_LUM</fp>
       </footprints>
@@ -535,52 +535,6 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="MCU_Module" part="Arduino_UNO_R3">
-      <description>Arduino UNO Microcontroller Module, release 3</description>
-      <docs>https://www.arduino.cc/en/Main/arduinoBoardUno</docs>
-      <footprints>
-        <fp>Arduino*UNO*R3*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">A</field>
-        <field name="Value">Arduino_UNO_R3</field>
-        <field name="Footprint">Module:Arduino_UNO_R3</field>
-      </fields>
-      <pins>
-        <pin num="1" name="NC" type="NotConnected"/>
-        <pin num="2" name="IOREF" type="output"/>
-        <pin num="3" name="~RESET" type="input"/>
-        <pin num="4" name="3V3" type="power_out"/>
-        <pin num="5" name="+5V" type="power_out"/>
-        <pin num="6" name="GND" type="power_in"/>
-        <pin num="7" name="GND" type="power_in"/>
-        <pin num="8" name="VIN" type="power_in"/>
-        <pin num="9" name="A0" type="BiDi"/>
-        <pin num="10" name="A1" type="BiDi"/>
-        <pin num="11" name="A2" type="BiDi"/>
-        <pin num="12" name="A3" type="BiDi"/>
-        <pin num="13" name="SDA/A4" type="BiDi"/>
-        <pin num="14" name="SCL/A5" type="BiDi"/>
-        <pin num="15" name="D0/RX" type="BiDi"/>
-        <pin num="16" name="D1/TX" type="BiDi"/>
-        <pin num="17" name="D2" type="BiDi"/>
-        <pin num="18" name="D3" type="BiDi"/>
-        <pin num="19" name="D4" type="BiDi"/>
-        <pin num="20" name="D5" type="BiDi"/>
-        <pin num="21" name="D6" type="BiDi"/>
-        <pin num="22" name="D7" type="BiDi"/>
-        <pin num="23" name="D8" type="BiDi"/>
-        <pin num="24" name="D9" type="BiDi"/>
-        <pin num="25" name="D10" type="BiDi"/>
-        <pin num="26" name="D11" type="BiDi"/>
-        <pin num="27" name="D12" type="BiDi"/>
-        <pin num="28" name="D13" type="BiDi"/>
-        <pin num="29" name="GND" type="power_in"/>
-        <pin num="30" name="AREF" type="input"/>
-        <pin num="31" name="SDA/A4" type="BiDi"/>
-        <pin num="32" name="SCL/A5" type="BiDi"/>
-      </pins>
-    </libpart>
     <libpart lib="dk_LED-Indication-Discrete" part="LTST-C150TBKT">
       <description>LED BLUE CLEAR 1206 SMD</description>
       <docs>http://optoelectronics.liteon.com/upload/download/DS22-2000-026/LTST-C150TBKT(0630).pdf</docs>
@@ -675,22 +629,65 @@
         <pin num="3" name="D" type="BiDi"/>
       </pins>
     </libpart>
+    <libpart lib="marks_library" part="Arduino_UNO_R3_SHIELD">
+      <description>Arduino UNO Microcontroller Module, release 3</description>
+      <docs>https://www.arduino.cc/en/Main/arduinoBoardUno</docs>
+      <footprints>
+        <fp>Arduino*UNO*R3*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">A</field>
+        <field name="Value">Arduino_UNO_R3_SHIELD</field>
+        <field name="Footprint">Module:Arduino_UNO_R3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="NotConnected"/>
+        <pin num="2" name="IOREF" type="output"/>
+        <pin num="3" name="~RESET" type="input"/>
+        <pin num="4" name="3V3" type="power_out"/>
+        <pin num="5" name="+5V" type="power_out"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VIN" type="power_in"/>
+        <pin num="9" name="A0" type="BiDi"/>
+        <pin num="10" name="A1" type="BiDi"/>
+        <pin num="11" name="A2" type="BiDi"/>
+        <pin num="12" name="A3" type="BiDi"/>
+        <pin num="13" name="SDA/A4" type="BiDi"/>
+        <pin num="14" name="SCL/A5" type="BiDi"/>
+        <pin num="15" name="D0/RX" type="BiDi"/>
+        <pin num="16" name="D1/TX" type="BiDi"/>
+        <pin num="17" name="D2" type="BiDi"/>
+        <pin num="18" name="D3" type="BiDi"/>
+        <pin num="19" name="D4" type="BiDi"/>
+        <pin num="20" name="D5" type="BiDi"/>
+        <pin num="21" name="D6" type="BiDi"/>
+        <pin num="22" name="D7" type="BiDi"/>
+        <pin num="23" name="D8" type="BiDi"/>
+        <pin num="24" name="D9" type="BiDi"/>
+        <pin num="25" name="D10" type="BiDi"/>
+        <pin num="26" name="D11" type="BiDi"/>
+        <pin num="27" name="D12" type="BiDi"/>
+        <pin num="28" name="D13" type="BiDi"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="AREF" type="input"/>
+        <pin num="31" name="SDA/A4" type="BiDi"/>
+        <pin num="32" name="SCL/A5" type="BiDi"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="2020-08-31_02-24-53">
-      <uri>D:\Mark\Projects\kicad-library\ul_SN74HC595DR\KiCAD\2020-08-31_02-24-53\2020-08-31_02-24-53.lib</uri>
+      <uri>D:/Mark/Projects/kicad-library/ul_SN74HC595DR/KiCAD/2020-08-31_02-24-53/2020-08-31_02-24-53.lib</uri>
     </library>
-    <library logical="2020-08-31_02-39-33">
-      <uri>D:\Mark\Projects\kicad-library\ul_LDQM284RI\KiCAD\2020-08-31_02-39-33\2020-08-31_02-39-33.lib</uri>
+    <library logical="2020-09-17_03-48-59">
+      <uri>D:/Mark/Projects/kicad-library/ul_LDQM284RI_sequential/KiCAD/2020-09-17_03-48-59/2020-09-17_03-48-59.lib</uri>
     </library>
     <library logical="Amplifier_Operational">
       <uri>D:\Program Files\KiCad\share\kicad\library/Amplifier_Operational.lib</uri>
     </library>
     <library logical="Device">
       <uri>D:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
-    </library>
-    <library logical="MCU_Module">
-      <uri>D:\Program Files\KiCad\share\kicad\library/MCU_Module.lib</uri>
     </library>
     <library logical="dk_LED-Indication-Discrete">
       <uri>D:/Mark/Projects/digikey-kicad-library/digikey-symbols/dk_LED-Indication-Discrete.lib</uri>
@@ -704,248 +701,249 @@
     <library logical="dk_Transistors-FETs-MOSFETs-Single">
       <uri>D:/Mark/Projects/digikey-kicad-library/digikey-symbols/dk_Transistors-FETs-MOSFETs-Single.lib</uri>
     </library>
+    <library logical="marks_library">
+      <uri>D:/Mark/Projects/marks_kicad_library/marks_library.lib</uri>
+    </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(A0-Pad19)">
-      <node ref="A0" pin="19"/>
-      <node ref="LED1" pin="1"/>
-    </net>
-    <net code="2" name="Net-(Q1-Pad3)">
-      <node ref="Q1" pin="3"/>
-      <node ref="R1" pin="2"/>
-    </net>
-    <net code="3" name="Net-(R11-Pad1)">
-      <node ref="R11" pin="1"/>
-      <node ref="U2" pin="6"/>
-      <node ref="R12" pin="1"/>
-    </net>
-    <net code="4" name="Net-(A0-Pad28)">
+    <net code="1" name="Net-(A0-Pad28)">
       <node ref="U1" pin="11"/>
       <node ref="A0" pin="28"/>
     </net>
-    <net code="5" name="Net-(A0-Pad26)">
-      <node ref="U1" pin="14"/>
-      <node ref="A0" pin="26"/>
+    <net code="2" name="Net-(U1-Pad9)">
+      <node ref="U1" pin="9"/>
     </net>
-    <net code="6" name="Net-(A0-Pad25)">
-      <node ref="A0" pin="25"/>
-      <node ref="U1" pin="12"/>
-    </net>
-    <net code="7" name="Net-(A0-Pad21)">
-      <node ref="A0" pin="21"/>
-      <node ref="LED1" pin="11"/>
-    </net>
-    <net code="8" name="GND">
-      <node ref="R15" pin="2"/>
-      <node ref="U1" pin="13"/>
-      <node ref="A0" pin="29"/>
-      <node ref="R16" pin="2"/>
-      <node ref="U1" pin="8"/>
-      <node ref="Q1" pin="2"/>
-      <node ref="A0" pin="6"/>
-      <node ref="U1" pin="10"/>
-      <node ref="R13" pin="2"/>
-      <node ref="A0" pin="7"/>
-      <node ref="R14" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="U2" pin="4"/>
-      <node ref="C3" pin="2"/>
-      <node ref="VR1" pin="3"/>
-      <node ref="Q2" pin="2"/>
-      <node ref="R12" pin="2"/>
-      <node ref="J0" pin="1"/>
-    </net>
-    <net code="9" name="Net-(C1-Pad2)">
-      <node ref="C1" pin="2"/>
-    </net>
-    <net code="10" name="ADC-Gain">
-      <node ref="R11" pin="2"/>
-      <node ref="U2" pin="7"/>
-      <node ref="A0" pin="10"/>
-    </net>
-    <net code="11" name="Net-(R10-Pad2)">
-      <node ref="R10" pin="2"/>
-      <node ref="U1" pin="15"/>
-    </net>
-    <net code="12" name="Net-(R5-Pad2)">
-      <node ref="U1" pin="5"/>
-      <node ref="R5" pin="2"/>
-    </net>
-    <net code="13" name="Net-(R6-Pad2)">
-      <node ref="U1" pin="4"/>
-      <node ref="R6" pin="2"/>
-    </net>
-    <net code="14" name="Net-(R7-Pad2)">
-      <node ref="R7" pin="2"/>
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="15" name="Net-(R8-Pad2)">
-      <node ref="U1" pin="2"/>
-      <node ref="R8" pin="2"/>
-    </net>
-    <net code="16" name="Net-(R9-Pad2)">
-      <node ref="U1" pin="1"/>
-      <node ref="R9" pin="2"/>
-    </net>
-    <net code="17" name="Net-(LED1-Pad2)">
-      <node ref="LED1" pin="2"/>
-      <node ref="R3" pin="1"/>
-    </net>
-    <net code="18" name="Net-(LED1-Pad3)">
-      <node ref="LED1" pin="3"/>
-      <node ref="R4" pin="1"/>
-    </net>
-    <net code="19" name="Net-(LED1-Pad4)">
-      <node ref="LED1" pin="4"/>
-      <node ref="R5" pin="1"/>
-    </net>
-    <net code="20" name="Net-(LED1-Pad5)">
-      <node ref="R6" pin="1"/>
-      <node ref="LED1" pin="5"/>
-    </net>
-    <net code="21" name="Net-(LED1-Pad9)">
-      <node ref="R10" pin="1"/>
-      <node ref="LED1" pin="9"/>
-    </net>
-    <net code="22" name="Net-(LED1-Pad8)">
-      <node ref="LED1" pin="8"/>
-      <node ref="R9" pin="1"/>
-    </net>
-    <net code="23" name="Net-(LED1-Pad7)">
-      <node ref="LED1" pin="7"/>
-      <node ref="R8" pin="1"/>
-    </net>
-    <net code="24" name="Net-(LED1-Pad6)">
-      <node ref="R7" pin="1"/>
-      <node ref="LED1" pin="6"/>
-    </net>
-    <net code="25" name="Net-(R4-Pad2)">
+    <net code="3" name="Net-(R4-Pad2)">
       <node ref="U1" pin="6"/>
       <node ref="R4" pin="2"/>
     </net>
-    <net code="26" name="Net-(R3-Pad2)">
+    <net code="4" name="Net-(R7-Pad2)">
+      <node ref="U1" pin="3"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="5" name="Net-(A0-Pad25)">
+      <node ref="U1" pin="12"/>
+      <node ref="A0" pin="25"/>
+    </net>
+    <net code="6" name="Net-(R9-Pad2)">
+      <node ref="R9" pin="2"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(A0-Pad8)">
+      <node ref="A0" pin="8"/>
+    </net>
+    <net code="8" name="Net-(A0-Pad4)">
+      <node ref="A0" pin="4"/>
+    </net>
+    <net code="9" name="Net-(A0-Pad3)">
+      <node ref="A0" pin="3"/>
+    </net>
+    <net code="10" name="Net-(A0-Pad2)">
+      <node ref="A0" pin="2"/>
+    </net>
+    <net code="11" name="Net-(A0-Pad11)">
+      <node ref="A0" pin="11"/>
+    </net>
+    <net code="12" name="Net-(R8-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="13" name="Net-(R5-Pad2)">
+      <node ref="R5" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="14" name="Net-(R6-Pad2)">
+      <node ref="U1" pin="4"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="15" name="Net-(A0-Pad12)">
+      <node ref="A0" pin="12"/>
+    </net>
+    <net code="16" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="17" name="VCC">
+      <node ref="A0" pin="5"/>
+      <node ref="U1" pin="16"/>
+      <node ref="VR1" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="18" name="Net-(A0-Pad26)">
+      <node ref="A0" pin="26"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="19" name="Net-(LED0-Pad7)">
+      <node ref="R4" pin="1"/>
+      <node ref="LED0" pin="7"/>
+    </net>
+    <net code="20" name="Net-(R3-Pad2)">
       <node ref="R3" pin="2"/>
       <node ref="U1" pin="7"/>
     </net>
-    <net code="27" name="VCC">
-      <node ref="VR1" pin="1"/>
-      <node ref="A0" pin="5"/>
-      <node ref="U1" pin="16"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U2" pin="8"/>
+    <net code="21" name="Net-(LED0-Pad11)">
+      <node ref="LED0" pin="11"/>
+      <node ref="R3" pin="1"/>
     </net>
-    <net code="28" name="Net-(U1-Pad9)">
-      <node ref="U1" pin="9"/>
+    <net code="22" name="Net-(A0-Pad13)">
+      <node ref="A0" pin="13"/>
     </net>
-    <net code="29" name="Net-(A0-Pad22)">
-      <node ref="A0" pin="22"/>
-      <node ref="LED1" pin="12"/>
+    <net code="23" name="Net-(A0-Pad14)">
+      <node ref="A0" pin="14"/>
     </net>
-    <net code="30" name="Net-(A0-Pad20)">
-      <node ref="A0" pin="20"/>
-      <node ref="LED1" pin="10"/>
+    <net code="24" name="Net-(A0-Pad31)">
+      <node ref="A0" pin="31"/>
     </net>
-    <net code="31" name="Net-(J0-Pad2)">
-      <node ref="R0" pin="1"/>
-      <node ref="J0" pin="2"/>
+    <net code="25" name="Net-(A0-Pad32)">
+      <node ref="A0" pin="32"/>
     </net>
-    <net code="32" name="Net-(D2-Pad2)">
-      <node ref="R14" pin="1"/>
-      <node ref="D2" pin="2"/>
-    </net>
-    <net code="33" name="Net-(Q2-Pad3)">
-      <node ref="Q2" pin="3"/>
-      <node ref="R2" pin="2"/>
-    </net>
-    <net code="34" name="Net-(D3-Pad2)">
-      <node ref="R15" pin="1"/>
-      <node ref="D3" pin="2"/>
-    </net>
-    <net code="35" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2"/>
-      <node ref="R13" pin="1"/>
-    </net>
-    <net code="36" name="30vLeg">
-      <node ref="A0" pin="18"/>
-      <node ref="D2" pin="1"/>
-      <node ref="Q2" pin="1"/>
-    </net>
-    <net code="37" name="Net-(A0-Pad24)">
-      <node ref="A0" pin="24"/>
-    </net>
-    <net code="38" name="Net-(A0-Pad23)">
+    <net code="26" name="Net-(A0-Pad23)">
       <node ref="A0" pin="23"/>
     </net>
-    <net code="39" name="Net-(A0-Pad2)">
-      <node ref="A0" pin="2"/>
+    <net code="27" name="Net-(A0-Pad24)">
+      <node ref="A0" pin="24"/>
     </net>
-    <net code="40" name="Net-(A0-Pad27)">
+    <net code="28" name="Net-(A0-Pad27)">
       <node ref="A0" pin="27"/>
     </net>
+    <net code="29" name="Net-(LED0-Pad3)">
+      <node ref="R10" pin="1"/>
+      <node ref="LED0" pin="3"/>
+    </net>
+    <net code="30" name="Net-(LED0-Pad5)">
+      <node ref="LED0" pin="5"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="31" name="Net-(LED0-Pad10)">
+      <node ref="LED0" pin="10"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="32" name="Net-(LED0-Pad2)">
+      <node ref="LED0" pin="2"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="33" name="Net-(LED0-Pad4)">
+      <node ref="R5" pin="1"/>
+      <node ref="LED0" pin="4"/>
+    </net>
+    <net code="34" name="Net-(LED0-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="LED0" pin="1"/>
+    </net>
+    <net code="35" name="Net-(A0-Pad19)">
+      <node ref="A0" pin="19"/>
+      <node ref="LED0" pin="12"/>
+    </net>
+    <net code="36" name="Net-(A0-Pad20)">
+      <node ref="A0" pin="20"/>
+      <node ref="LED0" pin="9"/>
+    </net>
+    <net code="37" name="Net-(A0-Pad21)">
+      <node ref="A0" pin="21"/>
+      <node ref="LED0" pin="8"/>
+    </net>
+    <net code="38" name="Net-(A0-Pad22)">
+      <node ref="A0" pin="22"/>
+      <node ref="LED0" pin="6"/>
+    </net>
+    <net code="39" name="ADC-Unity">
+      <node ref="A0" pin="9"/>
+      <node ref="U2" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="40" name="30vLeg">
+      <node ref="D2" pin="1"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="A0" pin="18"/>
+    </net>
     <net code="41" name="15vLeg">
-      <node ref="D1" pin="1"/>
       <node ref="Q1" pin="1"/>
+      <node ref="D1" pin="1"/>
       <node ref="A0" pin="17"/>
     </net>
     <net code="42" name="5vLeg">
-      <node ref="A0" pin="16"/>
       <node ref="D3" pin="1"/>
+      <node ref="A0" pin="16"/>
     </net>
     <net code="43" name="1.2vLeg">
-      <node ref="D4" pin="1"/>
       <node ref="A0" pin="15"/>
+      <node ref="D4" pin="1"/>
     </net>
-    <net code="44" name="Net-(A0-Pad14)">
-      <node ref="A0" pin="14"/>
+    <net code="44" name="Net-(A0-Pad1)">
+      <node ref="A0" pin="1"/>
     </net>
-    <net code="45" name="Net-(A0-Pad13)">
-      <node ref="A0" pin="13"/>
-    </net>
-    <net code="46" name="Net-(A0-Pad12)">
-      <node ref="A0" pin="12"/>
-    </net>
-    <net code="47" name="Net-(A0-Pad11)">
-      <node ref="A0" pin="11"/>
-    </net>
-    <net code="48" name="ADC-Unity">
-      <node ref="U2" pin="1"/>
-      <node ref="A0" pin="9"/>
-      <node ref="U2" pin="2"/>
-    </net>
-    <net code="49" name="Net-(A0-Pad8)">
-      <node ref="A0" pin="8"/>
-    </net>
-    <net code="50" name="Net-(A0-Pad4)">
-      <node ref="A0" pin="4"/>
-    </net>
-    <net code="51" name="Net-(A0-Pad32)">
-      <node ref="A0" pin="32"/>
-    </net>
-    <net code="52" name="Net-(A0-Pad31)">
-      <node ref="A0" pin="31"/>
-    </net>
-    <net code="53" name="AREF_4.096v">
-      <node ref="VR1" pin="2"/>
-      <node ref="A0" pin="30"/>
+    <net code="45" name="AREF_4.096v">
       <node ref="C2" pin="1"/>
+      <node ref="A0" pin="30"/>
+      <node ref="VR1" pin="2"/>
     </net>
-    <net code="54" name="Net-(A0-Pad3)">
-      <node ref="A0" pin="3"/>
+    <net code="46" name="Net-(Q1-Pad3)">
+      <node ref="Q1" pin="3"/>
+      <node ref="R1" pin="2"/>
     </net>
-    <net code="55" name="Net-(D4-Pad2)">
-      <node ref="R16" pin="1"/>
-      <node ref="D4" pin="2"/>
+    <net code="47" name="Net-(J0-Pad2)">
+      <node ref="J0" pin="2"/>
+      <node ref="R0" pin="1"/>
     </net>
-    <net code="56" name="/VoltageDivider">
+    <net code="48" name="Net-(D3-Pad2)">
+      <node ref="R15" pin="1"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="49" name="Net-(D2-Pad2)">
+      <node ref="R14" pin="1"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="50" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="51" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="52" name="ADC-Gain">
+      <node ref="R11" pin="2"/>
+      <node ref="A0" pin="10"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="53" name="Net-(R11-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="54" name="/VoltageDivider">
       <node ref="U2" pin="5"/>
       <node ref="U2" pin="3"/>
-      <node ref="R1" pin="1"/>
       <node ref="R2" pin="1"/>
+      <node ref="R1" pin="1"/>
       <node ref="R0" pin="2"/>
     </net>
-    <net code="57" name="Net-(A0-Pad1)">
-      <node ref="A0" pin="1"/>
+    <net code="55" name="GND">
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U1" pin="10"/>
+      <node ref="U2" pin="4"/>
+      <node ref="R12" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="VR1" pin="3"/>
+      <node ref="J0" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="A0" pin="6"/>
+      <node ref="R14" pin="2"/>
+      <node ref="A0" pin="29"/>
+      <node ref="A0" pin="7"/>
+    </net>
+    <net code="56" name="Net-(D4-Pad2)">
+      <node ref="R16" pin="1"/>
+      <node ref="D4" pin="2"/>
     </net>
   </nets>
 </export>

@@ -409,9 +409,9 @@ L Amplifier_Operational:TL062 U2
 U 1 1 5F4CF15C
 P 7350 2800
 F 0 "U2" H 7350 3167 50  0000 C CNN
-F 1 "TL062" H 7350 3076 50  0000 C CNN
+F 1 "TL062CDR" H 7350 3076 50  0000 C CNN
 F 2 "footprints:TL062CDR" H 7350 2800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7350 2800 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/texas-instruments/TL062CDR/296-1281-1-ND/276549" H 7350 2800 50  0001 C CNN
 	1    7350 2800
 	-1   0    0    -1  
 $EndComp
@@ -420,9 +420,9 @@ L Amplifier_Operational:TL062 U2
 U 2 1 5F4D172B
 P 7350 3500
 F 0 "U2" H 7350 3867 50  0000 C CNN
-F 1 "TL062" H 7350 3776 50  0000 C CNN
+F 1 "TL062CDR" H 7350 3776 50  0000 C CNN
 F 2 "footprints:TL062CDR" H 7350 3500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7350 3500 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/texas-instruments/TL062CDR/296-1281-1-ND/276549" H 7350 3500 50  0001 C CNN
 	2    7350 3500
 	-1   0    0    -1  
 $EndComp
@@ -431,9 +431,9 @@ L Amplifier_Operational:TL062 U2
 U 3 1 5F4D3B6F
 P 7100 1950
 F 0 "U2" H 7058 1996 50  0000 L CNN
-F 1 "TL062" H 7058 1905 50  0000 L CNN
+F 1 "TL062CDR" H 7058 1905 50  0000 L CNN
 F 2 "footprints:TL062CDR" H 7100 1950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl061.pdf" H 7100 1950 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/texas-instruments/TL062CDR/296-1281-1-ND/276549" H 7100 1950 50  0001 C CNN
 	3    7100 1950
 	1    0    0    -1  
 $EndComp
@@ -454,7 +454,7 @@ U 1 1 5F4C90BC
 P 6250 1050
 F 0 "C2" H 6365 1096 50  0000 L CNN
 F 1 "10u" H 6365 1005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6288 900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 6288 900 50  0001 C CNN
 F 3 "~" H 6250 1050 50  0001 C CNN
 	1    6250 1050
 	1    0    0    -1  
@@ -521,7 +521,7 @@ U 1 1 5F4D596A
 P 6650 1950
 F 0 "C3" H 6765 1996 50  0000 L CNN
 F 1 "10u" H 6765 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6688 1800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 6688 1800 50  0001 C CNN
 F 3 "~" H 6650 1950 50  0001 C CNN
 	1    6650 1950
 	1    0    0    -1  
@@ -870,7 +870,7 @@ P 2900 1400
 F 0 "LED0" H 3700 1893 60  0000 C CNN
 F 1 "LDQ-M284RI" H 3700 1787 60  0000 C CNN
 F 2 "footprints4:LDQ-M284RI" H 3700 1640 60  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632" H 3700 1681 60  0000 C CNN
+F 3 "https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632" H 3700 1681 60  0001 C CNN
 	1    2900 1400
 	1    0    0    -1  
 $EndComp
