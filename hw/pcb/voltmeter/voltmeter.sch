@@ -410,7 +410,7 @@ U 1 1 5F4CF15C
 P 7350 2800
 F 0 "U2" H 7350 3167 50  0000 C CNN
 F 1 "TL062CDR" H 7350 3076 50  0000 C CNN
-F 2 "footprints:TL062CDR" H 7350 2800 50  0001 C CNN
+F 2 "kicad-library:TL062CDR" H 7350 2800 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/texas-instruments/TL062CDR/296-1281-1-ND/276549" H 7350 2800 50  0001 C CNN
 	1    7350 2800
 	-1   0    0    -1  
@@ -421,7 +421,7 @@ U 2 1 5F4D172B
 P 7350 3500
 F 0 "U2" H 7350 3867 50  0000 C CNN
 F 1 "TL062CDR" H 7350 3776 50  0000 C CNN
-F 2 "footprints:TL062CDR" H 7350 3500 50  0001 C CNN
+F 2 "kicad-library:TL062CDR" H 7350 3500 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/texas-instruments/TL062CDR/296-1281-1-ND/276549" H 7350 3500 50  0001 C CNN
 	2    7350 3500
 	-1   0    0    -1  
@@ -432,7 +432,7 @@ U 3 1 5F4D3B6F
 P 7100 1950
 F 0 "U2" H 7058 1996 50  0000 L CNN
 F 1 "TL062CDR" H 7058 1905 50  0000 L CNN
-F 2 "footprints:TL062CDR" H 7100 1950 50  0001 C CNN
+F 2 "kicad-library:TL062CDR" H 7100 1950 50  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/texas-instruments/TL062CDR/296-1281-1-ND/276549" H 7100 1950 50  0001 C CNN
 	3    7100 1950
 	1    0    0    -1  
@@ -457,17 +457,6 @@ F 1 "GND" H 5855 1127 50  0000 C CNN
 F 2 "" H 5850 1300 50  0001 C CNN
 F 3 "" H 5850 1300 50  0001 C CNN
 	1    5850 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0110
-U 1 1 5F4CC81E
-P 4800 5450
-F 0 "#PWR0110" H 4800 5200 50  0001 C CNN
-F 1 "GND" H 4805 5277 50  0000 C CNN
-F 2 "" H 4800 5450 50  0001 C CNN
-F 3 "" H 4800 5450 50  0001 C CNN
-	1    4800 5450
 	1    0    0    -1  
 $EndComp
 Text GLabel 5400 700  1    50   UnSpc ~ 0
@@ -622,17 +611,6 @@ Wire Wire Line
 	4800 6000 4800 5900
 Wire Wire Line
 	4800 5900 4500 5900
-Wire Wire Line
-	4500 5500 4650 5500
-Wire Wire Line
-	4500 5600 4650 5600
-Wire Wire Line
-	4650 5600 4650 5500
-Wire Wire Line
-	4800 5450 4650 5450
-Wire Wire Line
-	4650 5450 4650 5500
-Connection ~ 4650 5500
 Text GLabel 4500 6300 2    50   UnSpc ~ 0
 VCC
 $Comp
@@ -762,12 +740,12 @@ F 3 "" H 5400 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2020-08-31_02-24-53:SN74HC595DR U1
+L voltmeter-rescue:SN74HC595DR-2020-08-31_02-24-53 U1
 U 1 1 5F51CDAA
 P 4500 5500
 F 0 "U1" H 5300 5887 60  0000 C CNN
 F 1 "SN74HC595DR" H 5300 5781 60  0000 C CNN
-F 2 "footprints2:SN74HC595DR" H 5300 5740 60  0001 C CNN
+F 2 "kicad-library:SN74HC595DR" H 5300 5740 60  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595DR/296-14857-1-ND/562567" H 5300 5781 60  0001 C CNN
 	1    4500 5500
 	-1   0    0    -1  
@@ -853,12 +831,12 @@ F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 6150 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 2020-09-17_03-48-59:LDQ-M284RI LED0
+L voltmeter-rescue:LDQ-M284RI-2020-09-17_03-48-59 LED0
 U 1 1 5F6E9FDC
 P 2900 1400
 F 0 "LED0" H 3700 1893 60  0000 C CNN
 F 1 "LDQ-M284RI" H 3700 1787 60  0000 C CNN
-F 2 "footprints4:LDQ-M284RI" H 3700 1640 60  0001 C CNN
+F 2 "kicad-library:LDQ-M284RI" H 3700 1640 60  0001 C CNN
 F 3 "https://www.digikey.com/product-detail/en/lumex-opto-components-inc/LDQ-M284RI/67-1427-ND/252632" H 3700 1681 60  0001 C CNN
 	1    2900 1400
 	1    0    0    -1  
@@ -928,4 +906,25 @@ F 3 "~" H 6250 1050 50  0001 C CNN
 	1    6250 1050
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F4CC81E
+P 4700 5300
+F 0 "#PWR0110" H 4700 5050 50  0001 C CNN
+F 1 "GND" H 4705 5127 50  0000 C CNN
+F 2 "" H 4700 5300 50  0001 C CNN
+F 3 "" H 4700 5300 50  0001 C CNN
+	1    4700 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 5600 2    50   UnSpc ~ 0
+VCC
+Wire Wire Line
+	4500 5500 4600 5500
+Wire Wire Line
+	4600 5500 4600 5200
+Wire Wire Line
+	4600 5200 4700 5200
+Wire Wire Line
+	4700 5200 4700 5300
 $EndSCHEMATC
