@@ -3,6 +3,7 @@
 #define SCALE_4V_PIN    1
 #define SCALE_12V_PIN   2
 #define SCALE_30V_PIN   3
+int led_pins [] = {SCALE_1V_PIN, SCALE_4V_PIN, SCALE_12V_PIN, SCALE_30V_PIN};
 // define shift register pins
 #define SR_RCLK_PIN   10
 #define SR_SER_PIN    11
@@ -14,7 +15,31 @@ byte data [] = {0b10101011, 0b10000110, 0b10101111, 0b10100001};
 #define SS_DIGIT2_PIN 5
 #define SS_DIGIT3_PIN 6
 #define SS_DIGIT4_PIN 7
-int pins [] = {SS_DIGIT1_PIN, SS_DIGIT2_PIN, SS_DIGIT3_PIN, SS_DIGIT4_PIN};
+int digit_pins [] = {SS_DIGIT1_PIN, SS_DIGIT2_PIN, SS_DIGIT3_PIN, SS_DIGIT4_PIN};
+//enum DigitPlace 
+//{
+//  ONES = 0,
+//  TENTHS = 1,
+//  HUNDREDTHS = 2,
+//  THOUSANDTHS = 3,
+//  INVALID = 4
+//};
+//// increment operator overload
+//// https://stackoverflow.com/questions/3475152/why-cant-i-increment-a-variable-of-an-enumerated-type
+//// https://stackoverflow.com/questions/20765004/no-operatorint-declared-for-postfix-fpermissive-on-enums
+//DigitPlace operator ++(DigitPlace &old_place, int)
+//{
+//  DigitPlace new_place = ONES;
+//  switch(old_place)
+//  {
+//    case ONES         : new_place = TENTHS;
+//    case TENTHS       : new_place = HUNDREDTHS;
+//    case HUNDREDTHS   : new_place = THOUSANDTHS;
+//    case THOUSANDTHS  : new_place = INVALID;
+//  }
+//  old_place = new_place;
+//  return new_place;
+//}
 
 void setup() 
 {
@@ -39,26 +64,18 @@ void setup()
 void loop() 
 {
   // test scale LED pins
-  digitalWrite(SCALE_1V_PIN, HIGH);
-  delay(1000);
-  digitalWrite(SCALE_1V_PIN, LOW);
-  delay(100);
-  digitalWrite(SCALE_4V_PIN, HIGH);
-  delay(1000);
-  digitalWrite(SCALE_4V_PIN, LOW);
-  delay(100);
-  digitalWrite(SCALE_12V_PIN, HIGH);
-  delay(1000);
-  digitalWrite(SCALE_12V_PIN, LOW);
-  delay(100);
-  digitalWrite(SCALE_30V_PIN, HIGH);
-  delay(1000);
-  digitalWrite(SCALE_30V_PIN, LOW);
-  delay(100);
+  for (int i = 0; i < 4; i++)
+  {
+    digitalWrite(led_pins[i], HIGH);
+    delay(1000);
+    digitalWrite(led_pins[i], LOW);
+    delay(100);
+  }
 
   // test shift register & 7-segment digit pins
   for (int j = 0; j < 500; j++)
   {
+//   for (DigitPlace i = ONES; i <= THOUSANDTHS; i++)
    for (int i = 0; i < 4; i++)
    {
      // write out segment data
@@ -66,13 +83,14 @@ void loop()
      shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, all[i]);
      digitalWrite(SR_RCLK_PIN, HIGH);
      // enable digit
-     digitalWrite(pins[i], HIGH);
+     digitalWrite(digit_pins[i], HIGH);
      delay(2);
-     digitalWrite(pins[i], LOW);
+     digitalWrite(digit_pins[i], LOW);
    }
   }
   for (int j = 0; j < 500; j++)
   {
+//   for (DigitPlace i = ONES; i <= THOUSANDTHS; i++)
    for (int i = 0; i < 4; i++)
    {
      // write out segment data
@@ -80,9 +98,9 @@ void loop()
      shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, data[i]);
      digitalWrite(SR_RCLK_PIN, HIGH);
      // enable digit
-     digitalWrite(pins[i], HIGH);
+     digitalWrite(digit_pins[i], HIGH);
      delay(2);
-     digitalWrite(pins[i], LOW);
+     digitalWrite(digit_pins[i], LOW);
    }
   }
 }
