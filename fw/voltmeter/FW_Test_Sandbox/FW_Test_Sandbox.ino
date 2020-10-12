@@ -1,0 +1,86 @@
+
+
+//define  
+#define SCALE_1V_PIN    0
+#define SCALE_4V_PIN    1
+#define SCALE_12V_PIN   2
+#define SCALE_30V_PIN   3
+int led_pins [] = {SCALE_1V_PIN, SCALE_4V_PIN, SCALE_12V_PIN, SCALE_30V_PIN};   
+
+// define shift register pins
+#define SR_RCLK_PIN   10
+#define SR_SER_PIN    11
+#define SR_SRCLK_PIN  13
+
+
+// define 7-segment digit pins
+#define SS_DIGIT1_PIN 4
+#define SS_DIGIT2_PIN 5
+#define SS_DIGIT3_PIN 6
+#define SS_DIGIT4_PIN 7
+
+
+//buffer for holding digits
+int buffer [5] = {1, 2, 3, 4, 0}
+
+
+
+
+void setup() 
+{
+  // put your setup code here, to run once:
+
+  // initialize analog reference pin
+  analogReference(EXTERNAL);
+  // initialize scale LED pins
+  pinMode(SCALE_1V_PIN, OUTPUT);
+  pinMode(SCALE_4V_PIN, OUTPUT);
+  pinMode(SCALE_12V_PIN, OUTPUT);
+  pinMode(SCALE_30V_PIN, OUTPUT);
+  // initialize shift register pins
+  pinMode(SR_RCLK_PIN, OUTPUT);
+  pinMode(SR_SER_PIN, OUTPUT);
+  pinMode(SR_SRCLK_PIN, OUTPUT);
+  // initialize 7-segment digit pins
+  pinMode(SS_DIGIT1_PIN, OUTPUT);
+  pinMode(SS_DIGIT2_PIN, OUTPUT);
+  pinMode(SS_DIGIT3_PIN, OUTPUT);
+  pinMode(SS_DIGIT4_PIN, OUTPUT);
+
+}
+
+
+void loop() 
+{
+
+  for(int digit=0; digit<4; digit++)
+  
+  {
+  // write out segment data
+     digitalWrite(SR_RCLK_PIN, LOW);
+     shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, buffer[digit]);
+     digitalWrite(SR_RCLK_PIN, HIGH);
+     // enable digit
+     digitalWrite(digit_pins[i], HIGH);
+     delay(2);
+     digitalWrite(digit_pins[i], LOW);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

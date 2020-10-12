@@ -10,52 +10,31 @@
 //Decode input voltage and autoscale voltage range. Output voltage to 7-segment display
 
 //Pin Definitions
-///////////////////////////////////////////////////////////////
-int ADC_Scale = 4.096;    //Voltage Scale for ADC
-int VIn_Pin_1 = 1;          //Pin Reading Analog Voltage
-int VIn_Pin_2
-int Buffer = 20;         //20% Bufffer
 
-#define ADC_UNITY_PIN 0
-#define ADC_GAIN_PIN  1
+///////////////////////////////////////////////////////////////
+float ADC_Scale = 4.096;    //Voltage Scale for ADC
+#define VIn_Pin_1 = 0;    //Pin Reading Analog Voltage
+#define VIn_Pin_2 = 1; 
+#define Buffer = 20;      //20% Bufffer
+
 ///////////////////////////////////////////////////////////////
 
 //Switch Pins for Scaling
-int 1_2_Led_Switch = 5;  //LED for 0-1.2V Case
-int 5V_Led_Switch = 6;   //LED for 1.2-5V Case
-int 15V_Led_Switch = 7;  //LED for 5-15V  Case 
-int 30V_Led_Switch = 8;  //LED for 15-30V Case
-#define SCALE_1V_PIN    0
-#define SCALE_5V_PIN    1
-#define SCALE_15V_PIN   2
-#define SCALE_30V_PIN   3
+#define 1_2_Led_Switch = 0;  //LED for 0-1.2V Case
+#define 5V_Led_Switch = 1;   //LED for 1.2-5V Case
+#define 15V_Led_Switch = 2;  //LED for 5-15V  Case 
+#define 30V_Led_Switch = 3;  //LED for 15-30V Case
 //////////////////////////////////////////////////////////////
 
 //HC595 Pin Setup
-int dataPin = 8;
-int latchPin = 9;
-int clockPin = 10;
-#define SR_RCLK_PIN   10
-#define SR_SER_PIN    11
-#define SR_SRCLK_PIN  13
+#define dataPin = 8;
+#define latchPin = 9;
+#define clockPin = 10;
 //////////////////////////////////////////////////////////////
 
 //7-Segment Digit Pins
-#define SS_DIGIT1_PIN 4
-#define SS_DIGIT2_PIN 5
-#define SS_DIGIT3_PIN 6
-#define SS_DIGIT4_PIN 7
-int pins [] = {SS_DIGIT1_PIN, SS_DIGIT2_PIN, SS_DIGIT3_PIN, SS_DIGIT4_PIN};
+#define pins [] = {1,2,3,4};
 //////////////////////////////////////////////////////////////
-
-//Type for tracking current scale state
-enum state 
-{
-  SCALE_1V,
-  SCALE_5V,
-  SCALE_15V,
-  SCALE_30V
-};
 
 void setup() 
 {
@@ -101,13 +80,28 @@ void loop()
 
 
 //Check to see if the voltage on the first ADC is in the 0-1.2V Scale
-Voltage_1 = analogRead(VIn_Pin_1)*(ADC_Scale/1023);	      //Read ADC and convert to Voltage
-
-
-//Call 7-Seg function and outptut
+Voltage_1 = float(analogReadfloat(VIn_Pin_1)*(ADC_Scale)/1023);	      //Read ADC and convert to Voltage
 
 
 
+  if(Voltage_1 < 1.2)
+  {
+    digitalWrite(1_2_Led_Switch,HIGH);
+    digitalWrite(5V_Led_Switch,LOW);
+    digitalWrite(15V_Led_Switch,LOW);
+    digitalWrite(30V_Led_Switch,LOW);  
+
+    //call 7 seg function
+    sevsegdisp(Voltage);
+
+    //Dicimal Location? 
+  }
+
+
+
+
+
+//If voltage is greater than 1.2V we will use the second analog read
 //Read in voltage on second ADC
 Voltage_2 = analogRead(VIn_Pin_2)*(ADC_Scale/1023);
 
@@ -116,16 +110,43 @@ Voltage_2 = analogRead(VIn_Pin_2)*(ADC_Scale/1023);
 if (Voltage < ADC_Scale)
 {
 
+    digitalWrite(1_2_Led_Switch,LOW);
+    digitalWrite(5V_Led_Switch,HIGH);
+    digitalWrite(15V_Led_Switch,LOW);
+    digitalWrite(30V_Led_Switch,LOW);
 
 
 
-//Check to see if you need to bump up a scale or down a scale
+   //Check to see if you need to bump up a scale or down a scale
 
-if(Voltage < (1-Buffer)*ADC_Scale)  //Setting lim on what voltage we look for to change scale
+  if(Voltage < (1-Buffer)*ADC_Scale)  //Setting lim on what voltage we look for to change scale
   {
+
+    digitalWrite(1_2_Led_Switch,LOW);
+    digitalWrite(5V_Led_Switch,LOW);
+    digitalWrite(15V_Led_Switch,HIGH);
+    digitalWrite(30V_Led_Switch,LOW);
+
+    //Display Function
+
 
    //If code running into buffer we increment to next scale. 
 
+
+    if(Voltage < (1-Buffer)*ADC_Scale)
+    {
+
+      digitalWrite(1_2_Led_Switch,LOW);
+      digitalWrite(5V_Led_Switch,LOW);
+      digitalWrite(15V_Led_Switch,LOW);
+      digitalWrite(30V_Led_Switch,HIGH);
+
+      
+    }
+
+
+
+   
   }
 
 
@@ -149,12 +170,29 @@ if(Voltage < (1-Buffer)*ADC_Scale)  //Setting lim on what voltage we look for to
 
 
 
-void sevsegdisp()
+void sevsegdisp(float Voltage)
 {
 
 //Decode voltage and output on display
 
-int nums [] ={ 192, 249, 164, 176, 153,146,130,248,128,144};      //Array containing 0-9 byte representation for display
+buffer[3] = (Voltage)%10;
+buffer[2] = (Voltage/10)%10;
+buffer[1] = (Voltage/100)%10;
+buffer[0] = (Voltage/1000)%10;
+
+
+//Multiplex Digits
+for(digit=0; digit<4; digit++)
+{
+  digitalWrite(latchPin,LOW);
+  shiftOut(dataPin,clockPin,MSBFIRST,nums[buffer[digit]]);
+  digitalWrite(latchPin,HIGH);
+  digitalWrite(pins[digit],HIGH);
+  delay(1)
+  digitalWrite(pins[digit],LOW);
+}
+
+int nums [] ={192, 249, 164, 176, 153,146,130,248,128,144};      //Array containing 0-9 byte representation for display
 
 
 }
