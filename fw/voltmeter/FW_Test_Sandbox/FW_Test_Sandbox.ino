@@ -24,6 +24,9 @@ int digit_pins [] = {SS_DIGIT1_PIN, SS_DIGIT2_PIN, SS_DIGIT3_PIN, SS_DIGIT4_PIN}
 //buffer for holding digits
 int buffer [5] = {1, 2, 3, 4, 0};
 
+//Array storing 7 segment values
+int nums [] = {192, 249, 164, 176, 153, 146, 130, 248, 128,144};
+
 
 
 
@@ -54,12 +57,15 @@ void setup()
 void loop() 
 {
 
+
+
+
   for(int digit=0; digit<4; digit++)
   
   {
   // write out segment data
      digitalWrite(SR_RCLK_PIN, LOW);
-     shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, buffer[digit]);
+     shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, nums[buffer[digit]]);
      digitalWrite(SR_RCLK_PIN, HIGH);
      // enable digit
      digitalWrite(digit_pins[digit], HIGH);
@@ -71,17 +77,20 @@ void loop()
 
 
 
+}
 
 
 
 
+int DisplayDecode(int number)
+{
+
+buffer[3] = (number)%10;
+buffer[2] = (number/10)%10;
+buffer[1] = (number/100)%10;
+buffer[0] = (number/1000)%10;
 
 
-
-
-
-
-
-
-
+//int nums [] ={192, 249, 164, 176, 153,146,130,248,128,144};      //Array containing 0-9 byte representation for display
+  
 }
