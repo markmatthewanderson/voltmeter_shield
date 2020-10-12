@@ -5,7 +5,8 @@
 #define SCALE_4V_PIN    1
 #define SCALE_12V_PIN   2
 #define SCALE_30V_PIN   3
-int led_pins [] = {SCALE_1V_PIN, SCALE_4V_PIN, SCALE_12V_PIN, SCALE_30V_PIN};   
+int led_pins [] = {SCALE_1V_PIN, SCALE_4V_PIN, SCALE_12V_PIN, SCALE_30V_PIN};  
+
 
 // define shift register pins
 #define SR_RCLK_PIN   10
@@ -18,10 +19,10 @@ int led_pins [] = {SCALE_1V_PIN, SCALE_4V_PIN, SCALE_12V_PIN, SCALE_30V_PIN};
 #define SS_DIGIT2_PIN 5
 #define SS_DIGIT3_PIN 6
 #define SS_DIGIT4_PIN 7
-
+int digit_pins [] = {SS_DIGIT1_PIN, SS_DIGIT2_PIN, SS_DIGIT3_PIN, SS_DIGIT4_PIN};
 
 //buffer for holding digits
-int buffer [5] = {1, 2, 3, 4, 0}
+int buffer [5] = {1, 2, 3, 4, 0};
 
 
 
@@ -61,9 +62,9 @@ void loop()
      shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, buffer[digit]);
      digitalWrite(SR_RCLK_PIN, HIGH);
      // enable digit
-     digitalWrite(digit_pins[i], HIGH);
+     digitalWrite(digit_pins[digit], HIGH);
      delay(2);
-     digitalWrite(digit_pins[i], LOW);
+     digitalWrite(digit_pins[digit], LOW);
 
   }
 
