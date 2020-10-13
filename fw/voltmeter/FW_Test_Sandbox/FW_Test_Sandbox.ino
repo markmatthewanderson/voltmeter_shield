@@ -59,6 +59,10 @@ void loop()
 
 
 
+  
+  DisplayDecode(4.096,buffer);
+
+  
 
   for(int digit=0; digit<4; digit++)
   
@@ -82,15 +86,14 @@ void loop()
 
 
 
-int DisplayDecode(int number)
+void DisplayDecode(float number, int* values)
 {
 
-buffer[3] = (number)%10;
-buffer[2] = (number/10)%10;
-buffer[1] = (number/100)%10;
-buffer[0] = (number/1000)%10;
+values[3] = int((number))%10;
+values[2] = int((number/10))%10;
+values[1] = int((number/100))%10;
+values[0] = int((number/1000))%10;
 
 
-//int nums [] ={192, 249, 164, 176, 153,146,130,248,128,144};      //Array containing 0-9 byte representation for display
-  
+//int nums [] ={192, 249, 164, 176, 153,146,130,248,128,144};      //Array containing 0-9 byte representation for display  
 }
