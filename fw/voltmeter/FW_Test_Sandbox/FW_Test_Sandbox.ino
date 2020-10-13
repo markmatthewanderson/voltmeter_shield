@@ -62,9 +62,12 @@ void loop()
 float Voltage = 69.69;
 
 
+  for (int i =0; i<100; i++)
+  {
+   delay (500);
+  DisplayDecode(i,buffer);
 
-  
-  DisplayDecode(Voltage,buffer);
+  }
 
   
  
