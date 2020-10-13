@@ -68,7 +68,7 @@ float Voltage;
    Voltage = i;
   DisplayDecode(Voltage,buffer);
 
-  }
+  
 
   
  
@@ -96,7 +96,7 @@ float Voltage;
 
   }
 
-
+  }
 
 
 }
