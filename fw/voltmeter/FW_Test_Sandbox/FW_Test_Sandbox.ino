@@ -59,17 +59,35 @@ void loop()
 
 
 
+float Voltage;
+
+
+
   
-  DisplayDecode(6.90,buffer);
+  DisplayDecode(69.69,buffer);
 
   
 
-  for(int digit=0; digit<4; digit++)
+
+
+
   
+  for(int digit=0; digit<4; digit++)  
   {
-  // write out segment data
+    int Decimal_Place;
+    
+    if(Voltage < 10 )
+    {
+      Decimal_Place = ((digit == 0) ? 128:0);
+    }
+    else
+    {
+      Decimal_Place = ((digit == 1) ? 128:0);
+    }
+    
+     // write out segment data
      digitalWrite(SR_RCLK_PIN, LOW);
-     shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, nums[buffer[digit]] ^ (digit == 0) ? 128:0);
+     shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, nums[buffer[digit]] ^ (Decimal_Place));  
      digitalWrite(SR_RCLK_PIN, HIGH);
      // enable digit
      digitalWrite(digit_pins[digit], HIGH);
