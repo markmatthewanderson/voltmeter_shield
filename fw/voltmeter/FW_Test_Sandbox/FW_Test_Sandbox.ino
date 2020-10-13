@@ -59,19 +59,15 @@ void loop()
 
 
 
-float Voltage;
+float Voltage = 69.69;
 
 
 
   
-  DisplayDecode(69.69,buffer);
+  DisplayDecode(Voltage,buffer);
 
   
-
-
-
-
-  
+ 
   for(int digit=0; digit<4; digit++)  
   {
     int Decimal_Place;
