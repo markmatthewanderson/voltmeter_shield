@@ -69,7 +69,7 @@ void loop()
   {
   // write out segment data
      digitalWrite(SR_RCLK_PIN, LOW);
-     shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, nums[buffer[digit]] | 128);
+     shiftOut(SR_SER_PIN, SR_SRCLK_PIN, LSBFIRST, nums[buffer[digit]] ^ (digit == 0) ? 128:0);
      digitalWrite(SR_RCLK_PIN, HIGH);
      // enable digit
      digitalWrite(digit_pins[digit], HIGH);
