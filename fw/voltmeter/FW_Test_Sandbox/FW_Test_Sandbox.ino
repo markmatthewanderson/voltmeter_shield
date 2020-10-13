@@ -64,13 +64,14 @@ float Voltage;
 
   for (int i =0; i<100; i++)
   {
-   delay (500);
    Voltage = i;
   DisplayDecode(Voltage,buffer);
 
   
 
   
+for(int j =0; j<200; j++)
+{
  
   for(int digit=0; digit<4; digit++)  
   {
@@ -91,11 +92,11 @@ float Voltage;
      digitalWrite(SR_RCLK_PIN, HIGH);
      // enable digit
      digitalWrite(digit_pins[digit], HIGH);
-     delay(2);
+     delay(1);
      digitalWrite(digit_pins[digit], LOW);
 
   }
-
+}
   }
 
 
