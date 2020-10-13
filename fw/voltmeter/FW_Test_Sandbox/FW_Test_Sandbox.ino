@@ -60,7 +60,7 @@ void loop()
 
 
   
-  DisplayDecode(69,buffer);
+  DisplayDecode(6.90,buffer);
 
   
 
@@ -95,7 +95,7 @@ if (number < 10)
 {
 values[3] = int((number*1000))%10;
 values[2] = int((number*100))%10;
-values[1] = int((number*10))%10;
+values[1] = int((number*10))%10 | 128;
 values[0] = int((number))%10;
 }
 
