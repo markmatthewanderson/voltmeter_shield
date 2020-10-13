@@ -60,7 +60,7 @@ void loop()
 
 
   
-  DisplayDecode(4.096,buffer);
+  DisplayDecode(69,buffer);
 
   
 
@@ -91,10 +91,22 @@ void DisplayDecode(float number, int* values)
 
 
 
+if (number < 10)
+{
 values[3] = int((number*1000))%10;
 values[2] = int((number*100))%10;
 values[1] = int((number*10))%10;
 values[0] = int((number))%10;
+}
+
+else 
+{
+  
+values[3] = int((number*100))%10;
+values[2] = int((number*10))%10;
+values[1] = int((number))%10;
+values[0] = int((number/10))%10;
+}
 
 
 //int nums [] ={192, 249, 164, 176, 153,146,130,248,128,144};      //Array containing 0-9 byte representation for display  
