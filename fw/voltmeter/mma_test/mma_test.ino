@@ -89,7 +89,9 @@ float getVoltage()
 {
   float read_value    = analogRead(ANALOG_HIGH)/float(1023);  // TODO FIXME adjust if in different scales
   float scale_factor  = 12.000;                               // TODO FIXME adjust if in different scales
-  float result        = read_value * scale_factor;
+  float zero_offset   = 0.161;
+  float fudge_factor  = 3.975;
+  float result        = (read_value - zero_offset) * scale_factor * fudge_factor;
   return result;
 }
 
